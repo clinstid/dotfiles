@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/buildarea/chris_linstid/sandboxes/trunk/NetBSD/src'
+let g:netrw_dirhist_2='/tmp/chris_linstid/chris_linstid-2011-11-09-11-43-28'
+let g:netrw_dirhist_3='/lhome/clinstid/bin'
+let g:netrw_dirhist_4='/buildarea/chris_linstid/sandboxes/glenlivet/NetBSD162/src/lib/EQL/libcommoneqlapputil'
+let g:netrw_dirhist_5='/buildarea/chris_linstid/sandboxes/glenlivet/NetBSD162/src/EQL/netmgt/RC/src/equallogic/cli/handlers'
+let g:netrw_dirhist_6='/buildarea/chris_linstid/sandboxes/glenlivet/NetBSD162/src/EQL/netmgt/RC/src/equallogic/cli/handlers/.svn'
+let g:netrw_dirhist_7='/buildarea/chris_linstid/sandboxes/glenlivet/NetBSD162/src/EQL/netmgt/RC/src/equallogic/cli/handlers/.svn/prop-base'
+let g:netrw_dirhist_8='/buildarea/chris_linstid/sandboxes/glenlivet/NetBSD162/src/EQL/netmgt/RC/src/equallogic/cli/handlers'
