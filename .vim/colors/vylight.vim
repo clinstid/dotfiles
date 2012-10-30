@@ -18,7 +18,7 @@ let g:colors_name="vylight"
 
 hi Normal        guifg=#1a1a1a  guibg=white
 hi Title         guifg=black    guibg=white
-hi Cursor        guifg=white     guibg=darkorange
+hi Cursor        guifg=white    guibg=orange
 hi LineNr        guifg=#aaaaaa  guibg=#f8f8f8
 hi Visual        guibg=#bbddff
 hi NonText       guifg=#cccccc  guibg=#fafafa
@@ -47,13 +47,13 @@ endif
 hi Comment       guifg=#668866  gui=none
 "hi Todo          guifg=#225522  guibg=white    gui=italic
 hi Todo          guifg=#446644  guibg=#ddeecc  gui=none
-hi Operator      guifg=#1a1a1a  gui=none
-hi Identifier    guifg=#1a1a1a  gui=none
+hi Operator      guifg=SteelBlue1  gui=none
+hi Identifier    guifg=SteelBlue3  gui=none
 hi Statement     guifg=#0050b0  gui=none
 hi Type          guifg=#0050b0  gui=none
 hi Constant      guifg=#204070  gui=none
 hi Conditional   guifg=#006040  gui=none
-hi Delimiter     guifg=#1a1a1a  gui=none
+hi Delimiter     guifg=SteelBlue2  gui=none
 hi PreProc       guifg=#007050  gui=none
 hi Special       guifg=#a05050  gui=none
 hi Keyword       guifg=#007050  gui=none

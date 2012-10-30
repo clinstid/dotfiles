@@ -11,7 +11,7 @@ set smarttab
 set title
 set gcr=a:blinkon0
 set autoindent
-" set smartindent
+set smartindent
 set laststatus=2
 set incsearch
 set showcmd
@@ -21,9 +21,9 @@ set hidden
 syntax on
 syntax enable
 set wildmenu
-set wildmode=list:longest,full
-set tags=/buildarea/chris_linstid/tagfiles/$CURR_VIEW
-cscope add /buildarea/chris_linstid/cscope/$CURR_VIEW
+set wildmode=list:longest
+set tags=tags;
+cscope add $SRCROOT $SRCROOT
 set mouse=a
 set ignorecase
 set smartcase
@@ -33,8 +33,14 @@ set linebreak
 set history=1000
 " set backup
 "set hlsearch
+set spellcapcheck=""
+set modelines=0
+set undofile
 
 filetype plugin on
+filetype indent on
+
+set cino=(0
 set ofu=syntaxcomplete#Complete
 
 set completeopt=longest,menuone
@@ -45,7 +51,7 @@ inoremap <expr> <C-n> pumvisible() ? '<C-n>' :
 inoremap <expr> <M-,> pumvisible() ? '<C-n>' :
   \ '<C-x><C-o><C-n><C-p><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
 
-
+au! FileType python setl nosmartindent
 
 " File types
 au BufNewFile,BufRead *.*_xml set ft=xml
@@ -70,7 +76,6 @@ set statusline=%t\ <%F\ %m\ %=%l/%L,%c\ %P
 if has("autocmd")
   filetype plugin indent on
   " autocmd FileType text setlocal textwidth=78
-  autocmd FileType text set shiftwidth=2
 
   " always jump to last edit position when opening a file
   autocmd BufReadPost *
@@ -91,39 +96,42 @@ endif
 
 set shellcmdflag=-cl
 
-
 if has("gui_running")
-    set background=dark
-    set background=light
-    " set guifont=Fixed\ 10
-    " set guifont=Fixed\ 13
-    set guifont=Droid\ Sans\ Mono\ 9
+    "Common settings
+    "---------------
+    set spell spelllang=en_us
     set columns=80
     set lines=40
-    colorscheme vylight
     set go=aip
     imap <C-C> "+y
+
+    "Light background
+    "----------------
+    set background=light
+    colorscheme vylight
+    set guifont=Droid\ Sans\ Mono\ 10
+
+    "Dark background
+    "---------------
+    "set background=dark
+    "colorscheme moria
+    "set guifont=Fixed\ 11
 else
     if &term == "screen"
         set t_Co=16
         colorscheme pablo
-        set background=dark
-        set nospell
     elseif &term == "xterm-color"
+        set spell spelllang=en_us
         set t_Co=256
-        set background=dark
         colorscheme 256_vilight
     elseif &term == "xterm"
+        set spell spelllang=en_us
         set t_Co=256
-        set background=dark
         colorscheme 256_vilight
-        " set background=light
-        " colorscheme mydefault
     endif    
 endif
 
 set formatoptions=tcqorn
-set spell spelllang=en_us
 
 nnoremap <silent> \g :!glimpse <cword> \| less <CR>
 " let g:glimpseFlags = "-in -H /buildarea/chris_linstid/glimpse/$CURR_VIEW"
@@ -135,6 +143,8 @@ nnoremap <silent> \d :VCSDiff<CR>
 nnoremap <silent> \mr :MRU<CR>
 let MRU_Max_Entries = 1000
 
+" Clear search highlighting
+" nnoremap <CR> :noh<CR><CR>
 
 " minibufexplorer
 let g:miniBufExplMapWindowNavVim = 1
@@ -152,3 +162,6 @@ let g:miniBufExplMapWindowNavVim = 1
 "   \gV:call setreg('"', old_reg, old_regtype)<CR>
 
 "map <C-]> :GtagsCursor<CR>
+
+nnoremap j gj
+nnoremap k gk
