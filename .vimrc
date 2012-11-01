@@ -25,6 +25,7 @@ set wildmode=list:longest
 set tags=tags;
 cscope add $SRCROOT $SRCROOT
 set mouse=a
+set ttymouse=xterm2
 set ignorecase
 set smartcase
 set number
