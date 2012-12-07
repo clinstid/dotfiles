@@ -36,7 +36,7 @@ set history=1000
 "set hlsearch
 set spellcapcheck=""
 set modelines=0
-set undofile
+"set undofile
 
 filetype plugin on
 filetype indent on
@@ -58,6 +58,7 @@ au! FileType python setl nosmartindent
 au BufNewFile,BufRead *.*_xml set ft=xml
 au BufNewFile,BufRead *.*_xsl set ft=xslt
 au BufNewFile,BufRead *.sm set ft=cpp
+
 
 set autochdir
 highlight StatusLine ctermfg=15 ctermbg=4
@@ -166,3 +167,5 @@ let g:miniBufExplMapWindowNavVim = 1
 
 nnoremap j gj
 nnoremap k gk
+
+call pathogen#infect()
