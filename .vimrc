@@ -168,4 +168,4 @@ let g:miniBufExplMapWindowNavVim = 1
 nnoremap j gj
 nnoremap k gk
 
-call pathogen#infect()
+"call pathogen#infect()
