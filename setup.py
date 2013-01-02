@@ -31,9 +31,14 @@ class Setup:
             dest = os.path.join(self.home_dir, file)
             source = os.path.join(os.path.dirname(self.dotfile_dir), file)
 
+            if not os.path.lexists(source):
+                print "Source dot file", source, "does not exist, skipping."
+                continue
+
             if os.path.lexists(dest):
                 # check if we already have a link for this guy and it's correct
                 if os.path.islink(dest) and os.path.realpath(dest) == source:
+                    print "Correct link already exists for", source + ", skipping."
                     continue
 
                 if os.path.islink(dest) or os.path.isdir(dest) or os.path.isfile(dest):
@@ -44,10 +49,8 @@ class Setup:
                     print "Failed to create symlink for", dest, "because there is already something there and we don't know what it is."
                     continue
 
-            if os.path.lexists(source):
-                print dest, "->", source
-                os.symlink(source, dest)
-
+            print dest, "->", source
+            os.symlink(source, dest)
 def main():
     setup = Setup()
     setup.run_setup()
