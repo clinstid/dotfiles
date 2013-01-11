@@ -17,6 +17,7 @@ class Setup:
 
         self.dot_files = [ '.vim',
                            '.vimrc',
+                           '.fluxbox',
                          ]
 
         self.now_string = get_date_string()
