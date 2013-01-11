@@ -1,3 +1,4 @@
+session.screen0.antialias: true
 session.screen0.clientMenu.usePixmap:	true
 session.screen0.menu.alpha:	255
 session.screen0.slit.alpha:	255
@@ -46,7 +47,7 @@ session.screen0.opaqueMove:	true
 session.screen0.focusNewWindows:	true
 session.screen0.maxIgnoreIncrement:	true
 session.screen0.defaultDeco:	NORMAL
-session.screen0.showwindowposition:	false
+session.screen0.showwindowposition:	true
 session.screen0.strftimeFormat:	%d %b, %a %02k:%M:%S
 session.screen0.allowRemoteActions:	false
 session.screen0.windowPlacement:	RowMinOverlapPlacement
