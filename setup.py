@@ -25,8 +25,7 @@ class Setup:
 
     def run_setup(self):
         if not os.path.exists(self.home_dir):
-            print "Home directory", self.home_dir, "does not exist."
-            sys.exit(-1)
+            raise Exception('Home directory {} does not exist.'.format(self.home_dir))
 
         for file in self.dot_files:
             dest = os.path.join(self.home_dir, file)
@@ -54,8 +53,14 @@ class Setup:
             os.symlink(source, dest)
 def main():
     setup = Setup()
-    setup.run_setup()
+    try:
+        setup.run_setup()
+    except Exception as e:
+        print "Failed to run: {}".format(e)
+        return -1
+
 
 if __name__ == '__main__':
-    main()
+    status = main()
+    exit(status)
 
