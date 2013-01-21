@@ -141,5 +141,4 @@ Mod4 n :Exec uxterm
 Mod4 c :Exec google-chrome
 Mod4 s :Exec uxterm -e "ssh simlin"
 Mod4 o :Exec uxterm -e "ssh opcenter.dyndns.org"
-
-
+Mod4 l :Exec xscreensaver-command -lock

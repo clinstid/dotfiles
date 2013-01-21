@@ -25,7 +25,8 @@ hi MoreMsg        ctermfg=228  ctermbg=233
 hi NonText        ctermfg=59   ctermbg=NONE
 hi Search         ctermfg=15 ctermbg=32
 hi StatusLine     ctermfg=16   ctermbg=111
-hi StatusLineNC   ctermfg=16   ctermbg=250
+hi StatusLineNC   ctermfg=16   ctermbg=255
+
 hi Visual         ctermfg=NONE ctermbg=4
 hi WildMenu       ctermfg=99   ctermbg=234    
 hi MatchParen     ctermfg=15   ctermbg=68    
