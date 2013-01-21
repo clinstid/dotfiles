@@ -168,4 +168,7 @@ let g:miniBufExplMapWindowNavVim = 1
 nnoremap j gj
 nnoremap k gk
 
+map <leader>tt :TagbarToggle<CR>
+map <leader>td <Plug>TaskList
+
 call pathogen#infect()

@@ -51,6 +51,7 @@ class Setup:
 
             print dest, "->", source
             os.symlink(source, dest)
+
 def main():
     setup = Setup()
     try:
