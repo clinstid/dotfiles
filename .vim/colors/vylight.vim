@@ -16,7 +16,7 @@ endif
 let g:colors_name="vylight"
 
 
-hi Normal        guifg=#1a1a1a  guibg=aliceblue
+hi Normal        guifg=#1a1a1a  guibg=white
 hi Title         guifg=black    guibg=white
 hi Cursor        guifg=white    guibg=orange
 hi LineNr        guifg=#aaaaaa  guibg=#f8f8f8
@@ -24,7 +24,7 @@ hi Visual        guibg=#bbddff
 hi NonText       guifg=#cccccc  guibg=#fafafa
 hi StatusLine    guifg=#333333  guibg=#eeeeee  gui=none
 hi StatusLineNC  guifg=#666666  guibg=#eeeeee  gui=none
-hi VertSplit     guifg=#333333  guibg=aliceblue  gui=none
+hi VertSplit     guifg=#333333  guibg=white  gui=none
 hi ModeMsg       guifg=#007050  guibg=#eeeeee  gui=none
 hi ErrorMsg      guifg=#f03050  guibg=#eeeeee  gui=none
 hi Error         guifg=#bb3355  guibg=white    gui=none
@@ -44,7 +44,7 @@ endif
 
 
 " Syntax highlighting 
-hi Comment       guifg=#668866  gui=none
+hi Comment       guifg=#668866  gui=italic
 "hi Todo          guifg=#225522  guibg=white    gui=italic
 hi Todo          guifg=#446644  guibg=#ddeecc  gui=none
 hi Operator      guifg=SteelBlue1  gui=none
