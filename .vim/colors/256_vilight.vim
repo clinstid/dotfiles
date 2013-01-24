@@ -1,5 +1,5 @@
-" rob.robb.ns
-" Last Change: 3 sep 2009
+" Author: Chris Linstid <chris@linstid.com
+" Last Change: 24 Jan 2013
 
 set background=dark
 hi clear
@@ -13,13 +13,12 @@ hi Normal         ctermfg=15   ctermbg=NONE
 hi Cursor         ctermfg=233  ctermbg=15
 hi CursorLine     ctermfg=NONE  ctermbg=238
 hi Directory      ctermfg=107  ctermbg=233    
-"hi VertSplit      ctermfg=254  ctermbg=254    
-hi VertSplit      cterm=NONE 
+hi VertSplit      ctermfg=0  ctermbg=0
 hi Folded         ctermfg=102  ctermbg=235    
 hi FoldColumn     ctermfg=167  ctermbg=233    
 hi vimFold        ctermfg=15   ctermbg=235    
 hi IncSearch      ctermfg=68   ctermbg=15    
-hi LineNr         ctermfg=250  ctermbg=234
+hi LineNr         ctermfg=238  ctermbg=234
 hi ModeMsg        ctermfg=228  ctermbg=233    
 hi MoreMsg        ctermfg=228  ctermbg=233    
 hi NonText        ctermfg=59   ctermbg=NONE

@@ -1,11 +1,12 @@
 "
-" Vim colour file
+" gvim colorscheme file
 "
-" Maintainer:  Vy-Shane Sin Fat <shane@node.mu>
-" Last Change: 11 March 2009
+" Maintainer:  Chris Linstid <chris@linstid.com> 
+" Last Change: Jan 23, 2013
 " Version:     1.0
 "
-" This colour file is meant for GUI use.
+" This colorscheme file is meant only for use with gvim, it won't work
+" properly with terminal vim.
 "
 
 set background=light
@@ -19,12 +20,12 @@ let g:colors_name="vylight"
 hi Normal        guifg=#1a1a1a  guibg=white
 hi Title         guifg=black    guibg=white
 hi Cursor        guifg=white    guibg=orange
-hi LineNr        guifg=#aaaaaa  guibg=#f8f8f8
+hi LineNr        guifg=gray81  guibg=white
 hi Visual        guibg=#bbddff
 hi NonText       guifg=#cccccc  guibg=#fafafa
-hi StatusLine    guifg=#333333  guibg=#eeeeee  gui=none
-hi StatusLineNC  guifg=#666666  guibg=#eeeeee  gui=none
-hi VertSplit     guifg=#333333  guibg=white  gui=none
+hi StatusLine    guifg=black  guibg=gray92  gui=none
+hi StatusLineNC  guifg=gray40  guibg=gray94  gui=none
+hi VertSplit     guifg=gray81  guibg=gray97  gui=none
 hi ModeMsg       guifg=#007050  guibg=#eeeeee  gui=none
 hi ErrorMsg      guifg=#f03050  guibg=#eeeeee  gui=none
 hi Error         guifg=#bb3355  guibg=white    gui=none

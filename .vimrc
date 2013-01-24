@@ -98,40 +98,6 @@ endif
 
 set shellcmdflag=-cl
 
-if has("gui_running")
-    "Common settings
-    "---------------
-    set spell spelllang=en_us
-    set columns=80
-    set lines=40
-    set go=aip
-    imap <C-C> "+y
-
-    "Light background
-    "----------------
-    set background=light
-    colorscheme vylight
-    set guifont=Droid\ Sans\ Mono\ 10
-
-    "Dark background
-    "---------------
-    "set background=dark
-    "colorscheme moria
-    "set guifont=Fixed\ 11
-else
-    if &term == "screen"
-        set t_Co=16
-        colorscheme pablo
-    elseif &term == "xterm-color"
-        set spell spelllang=en_us
-        set t_Co=256
-        colorscheme 256_vilight
-    elseif &term == "xterm"
-        set spell spelllang=en_us
-        set t_Co=256
-        colorscheme 256_vilight
-    endif    
-endif
 
 set formatoptions=tcqorn
 
@@ -171,4 +137,51 @@ nnoremap k gk
 map <leader>tt :TagbarToggle<CR>
 map <leader>td <Plug>TaskList
 
+map <leader>cc :cs find c <C-R><C-W><CR>
+map <leader>cd :cs find d <C-R><C-W><CR>
+map <leader>cg :cs find g <C-R><C-W><CR>
+
 call pathogen#infect()
+
+if has("gui_running")
+    "Common settings
+    "---------------
+    set spell spelllang=en_us
+    set columns=80
+    set lines=40
+    set go=aip
+    imap <C-C> "+y
+    set mousemodel=popup_setpos
+    set fillchars+=vert:\ 
+
+    "Light background
+    "----------------
+    set background=light
+    colorscheme vylight
+    set guifont=Droid\ Sans\ Mono\ 10
+
+    "Dark background
+    "---------------
+    "set background=dark
+    "colorscheme moria
+    "set guifont=Fixed\ 11
+else
+    if &term == "screen"
+        set t_Co=16
+        colorscheme pablo
+    elseif &term == "xterm-color"
+        set spell spelllang=en_us
+        set t_Co=256
+        set background=dark
+        colorscheme 256_vilight
+        "let g:solarized_termcolors=256
+        "colorscheme solarized
+    elseif &term == "xterm"
+        set spell spelllang=en_us
+        set t_Co=256
+        set background=dark
+        colorscheme 256_vilight
+        "let g:solarized_termcolors=256
+        "colorscheme solarized
+    endif    
+endif
