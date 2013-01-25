@@ -18,7 +18,7 @@ hi Folded         ctermfg=102  ctermbg=235
 hi FoldColumn     ctermfg=167  ctermbg=233    
 hi vimFold        ctermfg=15   ctermbg=235    
 hi IncSearch      ctermfg=68   ctermbg=15    
-hi LineNr         ctermfg=238  ctermbg=234
+hi LineNr         ctermfg=238  ctermbg=NONE
 hi ModeMsg        ctermfg=228  ctermbg=233    
 hi MoreMsg        ctermfg=228  ctermbg=233    
 hi NonText        ctermfg=59   ctermbg=NONE
