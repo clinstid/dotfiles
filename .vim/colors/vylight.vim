@@ -23,7 +23,7 @@ hi Cursor        guifg=white    guibg=orange
 hi LineNr        guifg=gray81  guibg=white
 hi Visual        guibg=#bbddff
 hi NonText       guifg=#cccccc  guibg=#fafafa
-hi StatusLine    guifg=black  guibg=gray92  gui=none
+hi StatusLine    guifg=gray30  guibg=gray92  gui=none
 hi StatusLineNC  guifg=gray40  guibg=gray94  gui=none
 hi VertSplit     guifg=gray81  guibg=gray97  gui=none
 hi ModeMsg       guifg=#007050  guibg=#eeeeee  gui=none
