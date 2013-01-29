@@ -153,6 +153,7 @@ if has("gui_running")
     imap <C-C> "+y
     set mousemodel=popup_setpos
     set fillchars+=vert:\ 
+    set nomousehide
 
     "Light background
     "----------------
