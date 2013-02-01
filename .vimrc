@@ -141,6 +141,8 @@ map <leader>cc :cs find c <C-R><C-W><CR>
 map <leader>cd :cs find d <C-R><C-W><CR>
 map <leader>cg :cs find g <C-R><C-W><CR>
 
+map <leader>w :colorscheme mydefault<CR>
+
 call pathogen#infect()
 
 if has("gui_running")

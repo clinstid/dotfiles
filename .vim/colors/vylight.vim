@@ -19,7 +19,7 @@ let g:colors_name="vylight"
 
 hi Normal        guifg=#1a1a1a  guibg=white
 hi Title         guifg=black    guibg=white
-hi Cursor        guifg=white    guibg=orange
+hi Cursor        guifg=white    guibg=SteelBlue3
 hi LineNr        guifg=gray81  guibg=white
 hi Visual        guibg=#bbddff
 hi NonText       guifg=#cccccc  guibg=#fafafa
