@@ -28,3 +28,6 @@
 [submodule ".vim/bundle/Recover"]
 	path = .vim/bundle/Recover
 	url = http://github.com/chrisbra/Recover.vim
+[submodule ".themes/Blackbird"]
+	path = .themes/Blackbird
+	url = https://github.com/shimmerproject/Blackbird
