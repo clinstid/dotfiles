@@ -37,7 +37,7 @@ set history=1000
 set spellcapcheck=""
 set modelines=0
 "set undofile
-
+set directory=~/.vimswap,~/tmp,/tmp
 filetype plugin on
 filetype indent on
 
@@ -170,10 +170,12 @@ if has("gui_running")
     "set guifont=Fixed\ 11
 else
     if &term == "screen"
+        set nospell
         set t_Co=16
         colorscheme pablo
     elseif &term == "xterm-color"
         set spell spelllang=en_us
+        set nospell
         set t_Co=256
         set background=dark
         colorscheme 256_vilight
@@ -181,6 +183,7 @@ else
         "colorscheme solarized
     elseif &term == "xterm"
         set spell spelllang=en_us
+        set nospell
         set t_Co=256
         set background=dark
         colorscheme 256_vilight

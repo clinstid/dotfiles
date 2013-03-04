@@ -1,7 +1,7 @@
 .fluxbox/lastwallpaper
 .fluxbox/fbrun_history
 .vim/spell/
-*.sw[op]
 .fluxbox/init
 .fluxbox/menu
 .netrwhist
+*.sw[op]
