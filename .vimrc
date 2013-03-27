@@ -145,6 +145,8 @@ map <leader>w :colorscheme mydefault<CR>
 
 call pathogen#infect()
 
+syn match Braces display '[{}()\[\]]'
+
 if has("gui_running")
     "Common settings
     "---------------
@@ -191,3 +193,6 @@ else
         "colorscheme solarized
     endif    
 endif
+
+let g:ctrp_cmd = 'CtrlPMixed'
+

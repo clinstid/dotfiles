@@ -1436,7 +1436,6 @@ let s:defaultMappings = [
 			\['a', 'VCSAdd'],
 			\['c', 'VCSCommit'],
 			\['D', 'VCSDelete'],
-			\['d', 'VCSDiff'],
 			\['G', 'VCSClearAndGotoOriginal'],
 			\['g', 'VCSGotoOriginal'],
 			\['i', 'VCSInfo'],
