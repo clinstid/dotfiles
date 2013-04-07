@@ -22,8 +22,6 @@ syntax on
 syntax enable
 set wildmenu
 set wildmode=list:longest
-set tags=tags;
-cscope add $SRCROOT $SRCROOT
 set mouse=a
 set ttymouse=xterm2
 set ignorecase
@@ -143,6 +141,12 @@ map <leader>cg :cs find g <C-R><C-W><CR>
 
 map <leader>w :colorscheme mydefault<CR>
 
+set tags=tags;
+
+if !empty($SRCROOT)
+    cscope add $SRCROOT $SRCROOT
+endif
+
 call pathogen#infect()
 
 syn match Braces display '[{}()\[\]]'
@@ -175,7 +179,7 @@ else
         set nospell
         set t_Co=16
         colorscheme pablo
-    elseif &term == "xterm-color"
+    elseif &term == "xterm-color" || &term == "xterm-256color"
         set spell spelllang=en_us
         set nospell
         set t_Co=256
