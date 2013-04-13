@@ -26,7 +26,7 @@ set mouse=a
 set ttymouse=xterm2
 set ignorecase
 set smartcase
-set number
+set nonumber
 set wrap
 set linebreak
 set history=1000
