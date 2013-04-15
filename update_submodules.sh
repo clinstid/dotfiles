@@ -1,2 +1,2 @@
 #!/bin/bash
-git fetch --recurse-submodules
+git pull --recurse-submodules
