@@ -175,27 +175,13 @@ if has("gui_running")
     "colorscheme moria
     "set guifont=Fixed\ 11
 else
+    set nospell
     if &term == "screen"
-        set nospell
         set t_Co=16
-        colorscheme pablo
-    elseif &term == "xterm-color" || &term == "xterm-256color"
-        set spell spelllang=en_us
-        set nospell
+    else
         set t_Co=256
-        set background=dark
-        colorscheme 256_vilight
-        "let g:solarized_termcolors=256
-        "colorscheme solarized
-    elseif &term == "xterm"
-        set spell spelllang=en_us
-        set nospell
-        set t_Co=256
-        set background=dark
-        colorscheme 256_vilight
-        "let g:solarized_termcolors=256
-        "colorscheme solarized
     endif    
+    colorscheme default
 endif
 
 let g:ctrp_cmd = 'CtrlPMixed'
