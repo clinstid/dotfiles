@@ -175,13 +175,14 @@ if has("gui_running")
     "colorscheme moria
     "set guifont=Fixed\ 11
 else
-    set nospell
     if &term == "screen"
         set t_Co=16
+        colorscheme default
     else
+        set spell spelllang=en_us
         set t_Co=256
+        colorscheme 256_vilight
     endif    
-    colorscheme default
 endif
 
 let g:ctrp_cmd = 'CtrlPMixed'
