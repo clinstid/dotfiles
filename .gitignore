@@ -7,4 +7,4 @@
 *.sw[op]
 .vim/.VimballRecord
 .vim/doc/tags
-\*.o
+*.o
