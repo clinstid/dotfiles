@@ -26,16 +26,15 @@ set mouse=a
 set ttymouse=xterm2
 set ignorecase
 set smartcase
-set nonumber
+set number
 set wrap
 set linebreak
 set history=1000
 " set backup
-"set hlsearch
+set nohlsearch
 set spellcapcheck=""
 set modelines=0
 "set undofile
-set directory=~/.vimswap,~/tmp,/tmp
 filetype plugin on
 filetype indent on
 
