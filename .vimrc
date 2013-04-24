@@ -35,7 +35,6 @@ set nohlsearch
 set spellcapcheck=""
 set modelines=0
 "set undofile
-set directory=~/.vimswap,~/tmp,/tmp
 filetype plugin on
 filetype indent on
 
