@@ -5,3 +5,5 @@
 .fluxbox/menu
 .netrwhist
 *.sw[op]
+.vim/.VimballRecord
+.vim/doc/tags
