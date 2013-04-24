@@ -57,7 +57,7 @@ au BufNewFile,BufRead *.*_xsl set ft=xslt
 au BufNewFile,BufRead *.sm set ft=cpp
 
 
-set autochdir
+"set autochdir
 highlight StatusLine ctermfg=15 ctermbg=4
 highlight StatusLineNC ctermfg=4 ctermbg=7
 set statusline=%t\ <%F\ %m\ %=%l/%L,%c\ %P
@@ -131,8 +131,6 @@ let g:miniBufExplMapWindowNavVim = 1
 nnoremap j gj
 nnoremap k gk
 
-nnoremap <leader>tf :CommandT
-nnoremap <leader>tb :CommandTBuffer
 
 map <leader>cc :cs find c <C-R><C-W><CR>
 map <leader>cd :cs find d <C-R><C-W><CR>
@@ -145,6 +143,16 @@ set tags=tags;
 if !empty($SRCROOT)
     cscope add $SRCROOT $SRCROOT
 endif
+
+let g:CommandTMaxFiles=100000
+
+if !empty($SVNCO_SRC)
+    nnoremap <silent> <leader>e :CommandT $SVNCO_SRC<CR>
+else
+    nnoremap <silent> <leader>e :CommandT<CR>
+endif
+
+nnoremap <silent> <leader>b :CommandTBuffer<CR>
 
 call pathogen#infect()
 
