@@ -19,7 +19,6 @@ class Setup:
                            '.vimrc',
                            '.fluxbox',
                            '.Xresources',
-                           '.themes',
                          ]
 
         self.now_string = get_date_string()
