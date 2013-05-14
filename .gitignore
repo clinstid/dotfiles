@@ -1,14 +1,5 @@
-.fluxbox/lastwallpaper
-.fluxbox/fbrun_history
-.vim/spell/
-.fluxbox/init
-.fluxbox/menu
-.netrwhist
-*.sw[op]
-.vim/.VimballRecord
+.vim/sessions
+.vim/.netrwhist
 .vim/doc/tags
 *.o
-.vim/ruby/command-t/Makefile
-.vim/ruby/command-t/ext.so
-.vim/ruby/command-t/mkmf.log
-
+*.so

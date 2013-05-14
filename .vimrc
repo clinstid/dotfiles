@@ -57,7 +57,7 @@ au BufNewFile,BufRead *.*_xsl set ft=xslt
 au BufNewFile,BufRead *.sm set ft=cpp
 
 
-"set autochdir
+set autochdir
 highlight StatusLine ctermfg=15 ctermbg=4
 highlight StatusLineNC ctermfg=4 ctermbg=7
 set statusline=%t\ <%F\ %m\ %=%l/%L,%c\ %P
@@ -153,6 +153,9 @@ else
 endif
 
 nnoremap <silent> <leader>b :CommandTBuffer<CR>
+
+let g:session_autoload="yes"
+let g:session_autosave="yes"
 
 call pathogen#infect()
 
