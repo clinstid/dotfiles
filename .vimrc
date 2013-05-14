@@ -185,7 +185,7 @@ if has("gui_running")
     "colorscheme moria
     "set guifont=Fixed\ 11
 else
-    if &term == "screen"
+    if &term == "screen" || &term == "linux"
         set t_Co=16
         colorscheme default
     else
