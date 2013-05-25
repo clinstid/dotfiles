@@ -22,8 +22,6 @@ syntax on
 syntax enable
 set wildmenu
 set wildmode=list:longest
-set tags=tags;
-cscope add $SRCROOT $SRCROOT
 set mouse=a
 set ttymouse=xterm2
 set ignorecase
@@ -33,11 +31,10 @@ set wrap
 set linebreak
 set history=1000
 " set backup
-"set hlsearch
+set nohlsearch
 set spellcapcheck=""
 set modelines=0
 "set undofile
-
 filetype plugin on
 filetype indent on
 
@@ -134,8 +131,6 @@ let g:miniBufExplMapWindowNavVim = 1
 nnoremap j gj
 nnoremap k gk
 
-map <leader>tt :TagbarToggle<CR>
-map <leader>td <Plug>TaskList
 
 map <leader>cc :cs find c <C-R><C-W><CR>
 map <leader>cd :cs find d <C-R><C-W><CR>
@@ -143,7 +138,28 @@ map <leader>cg :cs find g <C-R><C-W><CR>
 
 map <leader>w :colorscheme mydefault<CR>
 
+set tags=tags;
+
+if !empty($SRCROOT)
+    cscope add $SRCROOT $SRCROOT
+endif
+
+let g:CommandTMaxFiles=100000
+
+if !empty($SVNCO_SRC)
+    nnoremap <silent> <leader>e :CommandT $SVNCO_SRC<CR>
+else
+    nnoremap <silent> <leader>e :CommandT<CR>
+endif
+
+nnoremap <silent> <leader>b :CommandTBuffer<CR>
+
+let g:session_autoload="yes"
+let g:session_autosave="yes"
+
 call pathogen#infect()
+
+syn match Braces display '[{}()\[\]]'
 
 if has("gui_running")
     "Common settings
@@ -169,22 +185,15 @@ if has("gui_running")
     "colorscheme moria
     "set guifont=Fixed\ 11
 else
-    if &term == "screen"
+    if &term == "screen" || &term == "linux"
         set t_Co=16
-        colorscheme pablo
-    elseif &term == "xterm-color"
+        colorscheme default
+    else
         set spell spelllang=en_us
         set t_Co=256
-        set background=dark
         colorscheme 256_vilight
-        "let g:solarized_termcolors=256
-        "colorscheme solarized
-    elseif &term == "xterm"
-        set spell spelllang=en_us
-        set t_Co=256
-        set background=dark
-        colorscheme 256_vilight
-        "let g:solarized_termcolors=256
-        "colorscheme solarized
     endif    
 endif
+
+let g:ctrp_cmd = 'CtrlPMixed'
+

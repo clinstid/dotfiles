@@ -11,6 +11,7 @@
 *xterm*boldMode:false
 *xterm*loginShell:true
 *xterm*transparent: true
+*xterm*scrollBar: false
 
 ! Tango Color Scheme
 *xterm*color0: #2e3436
@@ -36,3 +37,11 @@
               <Key>Home:      string("\033[1~")\n\
               <Key>End:       string("\033[4~")
 *ttyModes: erase ^?
+
+Xft.lcdfilter: lcddefault
+Xft.antialias:  1
+Xft.dpi:        96
+Xft.hinting:    1
+Xft.hintstyle:  hintslight
+Xft.rgba:       rgb
+

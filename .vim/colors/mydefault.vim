@@ -23,7 +23,9 @@ let colors_name = "mydefault"
 " vim: sw=2
 
 " Started with the defaults, time to customize
+hi Normal       ctermfg=black ctermbg=none
 hi StatusLineNC ctermfg=white ctermbg=gray  guifg=white guibg=gray  
-hi StatusLine   ctermfg=white ctermbg=black guifg=white guibg=black 
-hi VertSplit    ctermfg=white ctermbg=black guifg=white guibg=black 
-hi LineNr       ctermfg=gray  ctermbg=white guifg=gray guibg=white 
+hi StatusLine   ctermfg=darkgray ctermbg=white guifg=white guibg=black 
+hi VertSplit    ctermfg=white ctermbg=gray guifg=white guibg=black 
+hi LineNr       ctermfg=gray  ctermbg=none guifg=gray guibg=white 
+hi Visual       cterm=reverse

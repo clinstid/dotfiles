@@ -1,6 +1,0 @@
-[begin] (fluxbox)
-[exec] (xterm) {uxterm}
-[exec] (firefox) {firefox}
-[exec] (google-chrome) {google-chrome}
-[include] (/etc/X11/fluxbox/fluxbox-menu)
-[end]

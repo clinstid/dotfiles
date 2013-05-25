@@ -1,4 +1,5 @@
-.fluxbox/lastwallpaper
-.fluxbox/fbrun_history
-.vim/spell/
-*.sw[op]
+.vim/sessions
+.vim/.netrwhist
+.vim/doc/tags
+*.o
+*.so

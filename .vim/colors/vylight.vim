@@ -58,6 +58,7 @@ hi Delimiter     guifg=SteelBlue2  gui=none
 hi PreProc       guifg=#007050  gui=none
 hi Special       guifg=#a05050  gui=none
 hi Keyword       guifg=#007050  gui=none
+hi Braces        guifg=SteelBlue1 gui=none
 
 hi link Function        Normal
 hi link Character       Constant
