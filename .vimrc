@@ -55,6 +55,7 @@ au! FileType python setl nosmartindent
 au BufNewFile,BufRead *.*_xml set ft=xml
 au BufNewFile,BufRead *.*_xsl set ft=xslt
 au BufNewFile,BufRead *.sm set ft=cpp
+au BufNewFile,BufRead *.py set ft=python
 
 
 set autochdir

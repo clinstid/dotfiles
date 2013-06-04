@@ -19,6 +19,7 @@ class Setup:
                            '.vimrc',
                            '.fluxbox',
                            '.Xresources',
+                           '.tmux.conf',
                          ]
 
         self.now_string = get_date_string()
