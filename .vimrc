@@ -132,6 +132,8 @@ let g:miniBufExplMapWindowNavVim = 1
 nnoremap j gj
 nnoremap k gk
 
+nnoremap <silent> <leader>vd :VCSDiff<CR>
+nnoremap <silent> <leader>va :VCSAnnotate<CR>
 
 map <leader>cc :cs find c <C-R><C-W><CR>
 map <leader>cd :cs find d <C-R><C-W><CR>

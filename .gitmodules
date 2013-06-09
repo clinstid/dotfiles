@@ -37,3 +37,6 @@
 [submodule ".vim/bundle/jedi"]
 	path = .vim/bundle/jedi
 	url = https://github.com/davidhalter/jedi
+[submodule ".vim/bundle/table-mode"]
+	path = .vim/bundle/table-mode
+	url = git@github.com:dhruvasagar/vim-table-mode.git
