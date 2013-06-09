@@ -9,7 +9,7 @@ endif
 
 let g:colors_name="256_vilight"
 
-hi Normal         ctermfg=15   ctermbg=NONE
+hi Normal         ctermfg=NONE   ctermbg=NONE
 hi Cursor         ctermfg=233  ctermbg=15
 hi CursorLine     ctermfg=NONE  ctermbg=238
 hi Directory      ctermfg=107  ctermbg=233    
