@@ -173,17 +173,17 @@ if has("gui_running")
     set mousemodel=popup_setpos
     set fillchars+=vert:\ 
     set nomousehide
+    set guifont=Droid\ Sans\ Mono\ 10
 
     "Light background
     "----------------
-    set background=light
-    colorscheme vylight
-    set guifont=Droid\ Sans\ Mono\ 10
+    "set background=light
+    "colorscheme vylight
 
     "Dark background
     "---------------
-    "set background=dark
-    "colorscheme moria
+    set background=dark
+    colorscheme molokai
     "set guifont=Fixed\ 11
 else
     if &term == "screen" || &term == "linux"
@@ -192,7 +192,8 @@ else
     else
         set spell spelllang=en_us
         set t_Co=256
-        colorscheme 256_vilight
+        "colorscheme 256_vilight
+        colorscheme molokai
     endif    
 endif
 
