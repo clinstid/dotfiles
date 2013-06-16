@@ -1,4 +1,4 @@
-*xterm*termName: xterm-color
+*xterm*termName: xterm
 *xterm*background: #1c1c1c
 *xterm*foreground: white
 *xterm*vt100*geometry: 80x40
