@@ -194,8 +194,8 @@ else
     else
         set spell spelllang=en_us
         set t_Co=256
-        "colorscheme 256_vilight
-        colorscheme molokai
+        colorscheme 256_vilight
+        "colorscheme molokai
     endif    
 endif
 
