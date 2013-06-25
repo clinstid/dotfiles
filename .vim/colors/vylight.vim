@@ -1,6 +1,7 @@
 "
 " gvim colorscheme file
 "
+" Author: vyshane <shane@node.mu>
 " Maintainer:  Chris Linstid <chris@linstid.com> 
 " Last Change: Jan 23, 2013
 " Version:     1.0

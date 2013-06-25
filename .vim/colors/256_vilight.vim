@@ -27,7 +27,7 @@ hi StatusLine     ctermfg=16   ctermbg=111
 hi StatusLineNC   ctermfg=16   ctermbg=255
 hi ColorColumn    ctermfg=NONE ctermbg=234
 
-hi Visual         ctermfg=NONE ctermbg=4
+hi Visual         ctermfg=NONE ctermbg=117
 hi WildMenu       ctermfg=99   ctermbg=234    
 hi MatchParen     ctermfg=15   ctermbg=68    
 hi ErrorMsg       ctermfg=167  ctermbg=NONE
