@@ -179,13 +179,13 @@ if has("gui_running")
 
     "Light background
     "----------------
-    "set background=light
-    "colorscheme vylight
+    set background=light
+    colorscheme vylight
 
     "Dark background
     "---------------
-    set background=dark
-    colorscheme molokai
+    "set background=dark
+    "colorscheme molokai
     "set guifont=Fixed\ 11
 else
     if &term == "screen" || &term == "linux"
@@ -194,8 +194,8 @@ else
     else
         set spell spelllang=en_us
         set t_Co=256
-        "colorscheme 256_vilight
-        colorscheme molokai
+        colorscheme 256_vilight
+        "colorscheme molokai
     endif    
 endif
 
