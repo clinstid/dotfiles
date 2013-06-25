@@ -5,7 +5,9 @@
 *xterm*cursorColor: SteelBlue
 *xterm*saveLines: 40000
 *xterm*charClass: 33:48,37:48,45-47:48,38:48
-*xterm*font: -misc-fixed-medium-r-normal-*-14-*-100-100-*-*-iso8859-1
+!*xterm*font: -misc-fixed-medium-r-normal-*-14-*-100-100-*-*-iso8859-1
+*xterm*faceName: Droid Sans Mono
+*xterm*faceSize: 10 
 *xterm*backspace: ^?
 *xterm*eightBitInput: false
 *xterm*boldMode:false
