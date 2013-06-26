@@ -1,6 +1,7 @@
 "
 " gvim colorscheme file
 "
+" Author: vyshane <shane@node.mu>
 " Maintainer:  Chris Linstid <chris@linstid.com> 
 " Last Change: Jan 23, 2013
 " Version:     1.0
@@ -29,6 +30,7 @@ hi VertSplit     guifg=gray81  guibg=gray97  gui=none
 hi ModeMsg       guifg=#007050  guibg=#eeeeee  gui=none
 hi ErrorMsg      guifg=#f03050  guibg=#eeeeee  gui=none
 hi Error         guifg=#bb3355  guibg=white    gui=none
+hi Folded        guifg=#999999  guibg=#fafafa
 
 
 " Vim 7.x specific
@@ -46,7 +48,6 @@ endif
 
 " Syntax highlighting 
 hi Comment       guifg=#668866  gui=italic
-"hi Todo          guifg=#225522  guibg=white    gui=italic
 hi Todo          guifg=#446644  guibg=#ddeecc  gui=none
 hi Operator      guifg=SteelBlue1  gui=none
 hi Identifier    guifg=SteelBlue3  gui=none
