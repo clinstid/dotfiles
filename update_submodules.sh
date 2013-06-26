@@ -1,2 +1,2 @@
 #!/bin/bash
-git pull --recurse-submodules
+git pull && git submodule init && git submodule update && git submodule status
