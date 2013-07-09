@@ -157,9 +157,6 @@ endif
 
 nnoremap <silent> <leader>b :CommandTBuffer<CR>
 
-let g:session_autoload="yes"
-let g:session_autosave="yes"
-
 call pathogen#infect()
 
 syn match Braces display '[{}()\[\]]'
