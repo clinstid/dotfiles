@@ -40,3 +40,6 @@
 [submodule ".vim/bundle/table-mode"]
 	path = .vim/bundle/table-mode
 	url = git@github.com:dhruvasagar/vim-table-mode.git
+[submodule ".vim/bundle/scss-syntax"]
+	path = .vim/bundle/scss-syntax
+	url = http://github.com/cakebaker/scss-syntax.vim

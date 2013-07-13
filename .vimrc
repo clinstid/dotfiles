@@ -198,3 +198,4 @@ endif
 
 let g:ctrp_cmd = 'CtrlPMixed'
 
+let g:session_autoload = 'no'
