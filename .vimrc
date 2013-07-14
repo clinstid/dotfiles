@@ -172,7 +172,11 @@ if has("gui_running")
     set mousemodel=popup_setpos
     set fillchars+=vert:\ 
     set nomousehide
-    set guifont=Droid\ Sans\ Mono\ 10
+    if has("gui_macvim")
+        set guifont=Droid\ Sans\ Mono:h14
+    else
+        set guifont=Droid\ Sans\ Mono\ 10
+    endif
 
     "Light background
     "----------------
