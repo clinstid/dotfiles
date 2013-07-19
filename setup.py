@@ -17,7 +17,6 @@ class Setup:
 
         self.dot_files = [ '.vim',
                            '.vimrc',
-                           '.fluxbox',
                            '.Xresources',
                            '.tmux.conf',
                          ]
