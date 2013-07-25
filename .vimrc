@@ -173,7 +173,7 @@ if has("gui_running")
     set fillchars+=vert:\ 
     set nomousehide
     if has("gui_macvim")
-        set guifont=Droid\ Sans\ Mono:h14
+        set guifont=Menlo:h14
     else
         set guifont=Droid\ Sans\ Mono\ 10
     endif
@@ -195,11 +195,12 @@ else
     else
         set spell spelllang=en_us
         set t_Co=256
-        colorscheme 256_vilight
-        "colorscheme molokai
+        "colorscheme 256_vilight
+        colorscheme molokai
     endif    
 endif
 
 let g:ctrp_cmd = 'CtrlPMixed'
 
 let g:session_autoload = 'no'
+let g:session_autosave = 'no'
