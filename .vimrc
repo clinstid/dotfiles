@@ -1,3 +1,5 @@
+call pathogen#infect()
+
 set nocompatible
 set ruler
 set backspace=2
@@ -157,8 +159,6 @@ endif
 
 nnoremap <silent> <leader>b :CommandTBuffer<CR>
 
-call pathogen#infect()
-
 syn match Braces display '[{}()\[\]]'
 
 if has("gui_running")
@@ -195,8 +195,8 @@ else
     else
         set spell spelllang=en_us
         set t_Co=256
-        "colorscheme 256_vilight
-        colorscheme molokai
+        colorscheme 256_vilight
+        "colorscheme molokai
     endif    
 endif
 
@@ -204,3 +204,5 @@ let g:ctrp_cmd = 'CtrlPMixed'
 
 let g:session_autoload = 'no'
 let g:session_autosave = 'no'
+
+
