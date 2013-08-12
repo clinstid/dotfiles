@@ -210,4 +210,5 @@ nmap <leader>s :SyntasticCheck<cr>
 nmap <leader>t :SyntasticTooggleMode<cr>
 nmap <leader>r :Errors<cr>
 
+let g:Powerline_symbols = 'fancy'
 
