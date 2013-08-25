@@ -170,12 +170,12 @@ if has("gui_running")
     set go=aip
     imap <C-C> "+y
     set mousemodel=popup_setpos
-    set fillchars+=vert:\ 
+    set fillchars+=vert:\
     set nomousehide
     if has("gui_macvim")
         set guifont=Menlo:h14
     else
-        set guifont=Droid\ Sans\ Mono\ 10
+        set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 13
     endif
 
     "Light background
@@ -201,7 +201,7 @@ else
         set t_Co=256
         colorscheme 256_vilight
         "colorscheme molokai
-    endif    
+    endif
 endif
 
 let g:ctrp_cmd = 'CtrlPMixed'
@@ -214,3 +214,5 @@ nmap <leader>s :SyntasticCheck<cr>
 nmap <leader>t :SyntasticTooggleMode<cr>
 nmap <leader>r :Errors<cr>
 
+let g:airline_powerline_fonts = 1
+let g:airline_theme = 'wombat'
