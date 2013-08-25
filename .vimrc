@@ -189,9 +189,13 @@ if has("gui_running")
     "colorscheme molokai
     "set guifont=Fixed\ 11
 else
-    if &term == "screen" || &term == "linux"
+    if &term == "screen"
         set t_Co=16
         colorscheme default
+    elseif &term == "linux"
+        set t_Co=16
+        colorscheme default
+        let g:powerline_loaded = 1
     else
         set spell spelllang=en_us
         set t_Co=256
