@@ -4,33 +4,34 @@ import datetime
 import shutil
 
 # This script automatically creates symbolic links in your home directory to
-# files and directories within the dotfiles repo.
+# files and directories within the repo.
 
 def get_date_string():
     now = datetime.datetime.now()
     now_string = "%d-%d-%d_%d-%d-%d" % (now.year, now.month, now.day, now.hour, now.minute, now.second)
     return now_string
 
+def real_name_from_dot_name(dot_name):
+    return dot_name.replace('dot', '', 1)
+
 class Setup:
     def __init__(self):
         self.home_dir = os.environ['HOME']
-
-        self.dot_files = [ '.vim',
-                           '.vimrc',
-                           '.Xresources',
-                           '.tmux.conf',
-                         ]
-
+        self.dotfile_dir = os.path.dirname(os.path.realpath(__file__))
         self.now_string = get_date_string()
-        self.dotfile_dir = os.path.realpath(__file__)
+
+        file_list = os.listdir(self.dotfile_dir)
+        self.dot_files = filter(lambda name: name.startswith('dot.'), file_list)
+        print 'Dot files:', self.dot_files
+
 
     def run_setup(self):
         if not os.path.exists(self.home_dir):
             raise Exception('Home directory {} does not exist.'.format(self.home_dir))
 
-        for file in self.dot_files:
-            dest = os.path.join(self.home_dir, file)
-            source = os.path.join(os.path.dirname(self.dotfile_dir), file)
+        for name in self.dot_files:
+            dest = os.path.join(self.home_dir, real_name_from_dot_name(name))
+            source = os.path.join(self.dotfile_dir, name)
 
             if not os.path.lexists(source):
                 print "Source dot file", source, "does not exist, skipping."
