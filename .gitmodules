@@ -1,54 +1,15 @@
-[submodule "dot.vim/bundle/tagbar"]
-	path = dot.vim/bundle/tagbar
-	url = git://github.com/majutsushi/tagbar
-[submodule "dot.vim/bundle/pyflakes-pathogen"]
-	path = dot.vim/bundle/pyflakes-pathogen
-	url = https://github.com/mitechie/pyflakes-pathogen.git
-[submodule "dot.vim/bundle/tasklist"]
-	path = dot.vim/bundle/tasklist
-	url = https://github.com/vim-scripts/TaskListdot.vim.git
-[submodule "dot.vim/bundle/command-t"]
-	path = dot.vim/bundle/command-t
-	url = https://github.com/wincent/Command-T.git
 [submodule "dot.vim/bundle/minibufexpl"]
 	path = dot.vim/bundle/minibufexpl
-	url = https://github.com/fholgado/minibufexpldot.vim
-[submodule "dot.vim/bundle/vim-colors-solarized"]
-	path = dot.vim/bundle/vim-colors-solarized
-	url = git://github.com/altercation/vim-colors-solarized.git
-[submodule "dot.vim/bundle/Recover"]
-	path = dot.vim/bundle/Recover
-	url = http://github.com/chrisbra/Recoverdot.vim
-[submodule ".themes/Blackbird"]
-	path = .themes/Blackbird
-	url = https://github.com/shimmerproject/Blackbird
+	url = https://github.com/fholgado/minibufexpl.vim
 [submodule "dot.vim/bundle/ctrlp"]
 	path = dot.vim/bundle/ctrlp
-	url = https://github.com/kien/ctrlpdot.vim
+	url = https://github.com/kien/ctrlp.vim
 [submodule "dot.vim/bundle/jedi"]
 	path = dot.vim/bundle/jedi
 	url = https://github.com/davidhalter/jedi
-[submodule "dot.vim/bundle/table-mode"]
-	path = dot.vim/bundle/table-mode
-	url = git@github.com:dhruvasagar/vim-table-mode.git
-[submodule "dot.vim/bundle/scss-syntax"]
-	path = dot.vim/bundle/scss-syntax
-	url = http://github.com/cakebaker/scss-syntaxdot.vim
-[submodule "dot.vim/bundle/syntastic"]
-	path = dot.vim/bundle/syntastic
-	url = https://github.com/scrooloose/syntastic
 [submodule "dot.vim/bundle/supertab"]
 	path = dot.vim/bundle/supertab
 	url = http://github.com/ervandew/supertab.git
-[submodule "dot.vim/bundle/vim-snipmate"]
-	path = dot.vim/bundle/vim-snipmate
-	url = https://github.com/garbas/vim-snipmate
-[submodule "dot.vim/bundle/vim-addon-mw-utils"]
-	path = dot.vim/bundle/vim-addon-mw-utils
-	url = https://github.com/MarcWeber/vim-addon-mw-utils
-[submodule "dot.vim/bundle/tlib_vim"]
-	path = dot.vim/bundle/tlib_vim
-	url = https://github.com/tomtom/tlib_vim
 [submodule "dot.vim/bundle/vim-airline"]
 	path = dot.vim/bundle/vim-airline
 	url = http://github.com/bling/vim-airline
