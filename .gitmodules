@@ -10,3 +10,6 @@
 [submodule "dot.vim/bundle/vim-airline"]
 	path = dot.vim/bundle/vim-airline
 	url = http://github.com/bling/vim-airline
+[submodule "dot.vim/bundle/javacomplete"]
+	path = dot.vim/bundle/javacomplete
+	url = https://github.com/vim-scripts/javacomplete.git
