@@ -13,3 +13,6 @@
 [submodule "dot.vim/bundle/javacomplete"]
 	path = dot.vim/bundle/javacomplete
 	url = https://github.com/vim-scripts/javacomplete.git
+[submodule "dot.vim/bundle/vim-fugitive"]
+	path = dot.vim/bundle/vim-fugitive
+	url = http://github.com/tpope/vim-fugitive.git
