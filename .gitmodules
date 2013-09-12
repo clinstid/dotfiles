@@ -13,3 +13,6 @@
 [submodule "dot.vim/bundle/javacomplete"]
 	path = dot.vim/bundle/javacomplete
 	url = https://github.com/vim-scripts/javacomplete.git
+[submodule "dot.vim/bundle/ctrlp.vim"]
+	path = dot.vim/bundle/ctrlp.vim
+	url = https://github.com/kien/ctrlp.vim.git
