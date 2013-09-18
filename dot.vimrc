@@ -173,7 +173,7 @@ if has("gui_running")
     set fillchars+=vert:\
     set nomousehide
     if has("gui_macvim")
-        set guifont=Menlo:h14
+        set guifont=Ubuntu\ Mono\ derivative\ Powerline:h14
     else
         set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 13
     endif
@@ -182,6 +182,7 @@ if has("gui_running")
     "----------------
     set background=light
     colorscheme vylight
+    let g:airline_theme = 'wombat'
 
     "Dark background
     "---------------
@@ -189,18 +190,17 @@ if has("gui_running")
     "colorscheme molokai
     "set guifont=Fixed\ 11
 else
+    let g:airline_theme = 'wombat'
     if &term == "screen"
         set t_Co=16
         colorscheme default
     elseif &term == "linux"
         set t_Co=16
         colorscheme default
-        let g:powerline_loaded = 1
     else
         set spell spelllang=en_us
         set t_Co=256
         colorscheme 256_vilight
-        "colorscheme molokai
     endif
 endif
 
@@ -215,4 +215,3 @@ nmap <leader>t :SyntasticTooggleMode<cr>
 nmap <leader>r :Errors<cr>
 
 let g:airline_powerline_fonts = 1
-let g:airline_theme = 'wombat'
