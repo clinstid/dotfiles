@@ -101,10 +101,6 @@ set shellcmdflag=-cl
 
 set formatoptions=tcqorn
 
-nnoremap <silent> \g :!glimpse <cword> \| less <CR>
-" let g:glimpseFlags = "-in -H /buildarea/chris_linstid/glimpse/$CURR_VIEW"
-" let g:glimpseKey = "<Leader>g"
-
 nnoremap <silent> \d :VCSDiff<CR>
 
 " Most Recently Used
@@ -145,19 +141,13 @@ map <leader>w :colorscheme mydefault<CR>
 
 set tags=tags;
 
-if !empty($SRCROOT)
-    cscope add $SRCROOT $SRCROOT
+if !empty($CSCOPE_DIR)
+    cscope add $CSCOPE_DIR
+elseif !empty($SRCROOT)
+    cscope add $SRCROOT
 endif
 
-let g:CommandTMaxFiles=100000
-
-if !empty($SVNCO_SRC)
-    nnoremap <silent> <leader>e :CommandT $SVNCO_SRC<CR>
-else
-    nnoremap <silent> <leader>e :CommandT<CR>
-endif
-
-nnoremap <silent> <leader>b :CommandTBuffer<CR>
+set cscopequickfix=s-,c-,d-,i-,t-,e-
 
 syn match Braces display '[{}()\[\]]'
 
@@ -205,17 +195,20 @@ else
 endif
 
 let g:ctrp_cmd = 'CtrlPMixed'
+let g:ctrlp_max_files = 100000
+let g:ctrlp_clear_cache_on_exit = 0
 
 let g:session_autoload = 'no'
 let g:session_autosave = 'no'
 
 " Syntastic
-nmap <leader>s :SyntasticCheck<cr>
-nmap <leader>t :SyntasticTooggleMode<cr>
-nmap <leader>r :Errors<cr>
+"nmap <leader>s :SyntasticCheck<cr>
+"nmap <leader>t :SyntasticTooggleMode<cr>
+"nmap <leader>r :Errors<cr>
 
 let g:airline_powerline_fonts = 1
 let g:airline_theme = 'wombat'
+let g:airline#extensions#whitespace#enabled = 0
 
 fun! <SID>StripTrailingWhitespaces()
     let l = line(".")
@@ -224,4 +217,4 @@ fun! <SID>StripTrailingWhitespaces()
     call cursor(l, c)
 endfun
 
-autocmd FileType c,cpp,java,php,ruby,python,vim autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
+map <C-d> :NERDTreeToggle<cr>
