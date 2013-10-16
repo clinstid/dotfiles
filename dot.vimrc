@@ -144,7 +144,7 @@ set tags=tags;
 if !empty($CSCOPE_DIR)
     cscope add $CSCOPE_DIR
 elseif !empty($SRCROOT)
-    cscope add $SRCROOT 
+    cscope add $SRCROOT
 endif
 
 set cscopequickfix=s-,c-,d-,i-,t-,e-
@@ -160,10 +160,10 @@ if has("gui_running")
     set go=aip
     imap <C-C> "+y
     set mousemodel=popup_setpos
-    set fillchars+=vert:\ 
+    set fillchars+=vert:\
     set nomousehide
     if has("gui_macvim")
-        set guifont=Menlo:h14
+        set guifont=Ubuntu\ Mono\ derivative\ Powerline:h14
     else
         set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 13
     endif
@@ -172,6 +172,7 @@ if has("gui_running")
     "----------------
     set background=light
     colorscheme vylight
+    let g:airline_theme = 'wombat'
 
     "Dark background
     "---------------
@@ -179,18 +180,17 @@ if has("gui_running")
     "colorscheme molokai
     "set guifont=Fixed\ 11
 else
+    let g:airline_theme = 'wombat'
     if &term == "screen"
         set t_Co=16
         colorscheme default
     elseif &term == "linux"
         set t_Co=16
         colorscheme default
-        let g:powerline_loaded = 1
     else
         set spell spelllang=en_us
         set t_Co=256
         colorscheme 256_vilight
-        "colorscheme molokai
     endif
 endif
 
@@ -217,7 +217,4 @@ fun! <SID>StripTrailingWhitespaces()
     call cursor(l, c)
 endfun
 
-autocmd FileType c,cpp,java,php,ruby,python autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
-
 map <C-d> :NERDTreeToggle<cr>
-
