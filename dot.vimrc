@@ -165,7 +165,7 @@ if has("gui_running")
     set fillchars+=vert:\
     set nomousehide
     if has("gui_macvim")
-        set guifont=Ubuntu\ Mono\ derivative\ Powerline:h14
+        set guifont=Ubuntu\ Mono\ derivative\ Powerline:h16
     else
         set guifont=Ubuntu\ Mono\ 12
     endif
