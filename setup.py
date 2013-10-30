@@ -2,6 +2,7 @@
 import os
 import datetime
 import shutil
+import subprocess
 
 # This script automatically creates symbolic links in your home directory to
 # files and directories within the repo.
@@ -53,6 +54,9 @@ class Setup:
 
             print dest, "->", source
             os.symlink(source, dest)
+
+        print "Populating submodules..."
+        subprocess.call(['bash', os.path.join(self.dotfile_dir, 'populate_submodules.sh')])
 
 def main():
     setup = Setup()

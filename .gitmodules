@@ -13,3 +13,9 @@
 [submodule "dot.vim/bundle/vim-gradle"]
 	path = dot.vim/bundle/vim-gradle
 	url = https://github.com/tfnico/vim-gradle.git
+[submodule "dot.vim/bundle/syntastic"]
+	path = dot.vim/bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
+[submodule "dot.vim/bundle/jedi-vim"]
+	path = dot.vim/bundle/jedi-vim
+	url = https://github.com/davidhalter/jedi-vim.git
