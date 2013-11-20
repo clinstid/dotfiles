@@ -220,3 +220,5 @@ fun! <SID>StripTrailingWhitespaces()
 endfun
 
 map <C-d> :NERDTreeToggle<cr>
+
+let g:html_indent_inctags = "html,head,body,tbody,ul,li,p"

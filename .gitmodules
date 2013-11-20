@@ -19,3 +19,9 @@
 [submodule "dot.vim/bundle/jedi-vim"]
 	path = dot.vim/bundle/jedi-vim
 	url = https://github.com/davidhalter/jedi-vim.git
+[submodule "dot.vim/bundle/emmet-vim"]
+	path = dot.vim/bundle/emmet-vim
+	url = https://github.com/mattn/emmet-vim.git
+[submodule "dot.vim/bundle/jshint.vim"]
+	path = dot.vim/bundle/jshint.vim
+	url = https://github.com/wookiehangover/jshint.vim.git
