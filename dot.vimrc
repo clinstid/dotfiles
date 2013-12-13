@@ -174,7 +174,7 @@ if has("gui_running")
     "----------------
     set background=light
     colorscheme vylight
-    let g:airline_theme = 'wombat'
+    let g:airline_theme = 'monochrome'
 
     "Dark background
     "---------------
@@ -209,7 +209,6 @@ nmap <leader>t :SyntasticTooggleMode<cr>
 nmap <leader>r :Errors<cr>
 
 let g:airline_powerline_fonts = 1
-let g:airline_theme = 'wombat'
 let g:airline#extensions#whitespace#enabled = 0
 
 fun! <SID>StripTrailingWhitespaces()
