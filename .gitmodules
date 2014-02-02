@@ -37,3 +37,21 @@
 [submodule "dot.vim/bundle/vim-bundler"]
 	path = dot.vim/bundle/vim-bundler
 	url = https://github.com/tpope/vim-bundler.git
+[submodule "dot.vim/bundle/auto-pairs"]
+	path = dot.vim/bundle/auto-pairs
+	url = https://github.com/jiangmiao/auto-pairs.git
+[submodule "dot.vim/bundle/jshint2.vim"]
+	path = dot.vim/bundle/jshint2.vim
+	url = https://github.com/Shutnik/jshint2.vim.git
+[submodule "dot.vim/bundle/YouCompleteMe"]
+	path = dot.vim/bundle/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe.git
+[submodule "dot.vim/bundle/tern_for_vim"]
+	path = dot.vim/bundle/tern_for_vim
+	url = https://github.com/marijnh/tern_for_vim.git
+[submodule "dot.vim/bundle/nerdtree"]
+	path = dot.vim/bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "dot.vim/bundle/vim-ragtag"]
+	path = dot.vim/bundle/vim-ragtag
+	url = https://github.com/tpope/vim-ragtag.git
