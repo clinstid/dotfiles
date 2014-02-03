@@ -222,10 +222,7 @@ fun! <SID>StripTrailingWhitespaces()
     call cursor(l, c)
 endfun
 
-map <C-d> :NERDTreeToggle<cr>
-map <C-v> :NERDTreeFocus<cr>
-
 let g:html_indent_inctags = "html,head,body,tbody,ul,li,p"
 
-autocmd vimenter * NERDTree
 map <leader>n :NERDTreeToggle<CR>
+map <leader>v :NERDTreeFocus<CR>
