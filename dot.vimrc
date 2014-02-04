@@ -226,3 +226,4 @@ let g:html_indent_inctags = "html,head,body,tbody,ul,li,p"
 
 map <leader>n :NERDTreeToggle<CR>
 map <leader>v :NERDTreeFocus<CR>
+map <leader>f :call JsBeautify()<cr>

@@ -52,3 +52,6 @@
 [submodule "dot.vim/bundle/vim-ragtag"]
 	path = dot.vim/bundle/vim-ragtag
 	url = https://github.com/tpope/vim-ragtag.git
+[submodule "dot.vim/bundle/vim-jsbeautify"]
+	path = dot.vim/bundle/vim-jsbeautify
+	url = https://github.com/maksimr/vim-jsbeautify.git
