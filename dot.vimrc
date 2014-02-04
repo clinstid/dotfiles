@@ -162,7 +162,7 @@ if has("gui_running")
     set go=aip
     imap <C-C> "+y
     set mousemodel=popup_setpos
-    set fillchars+=vert:\
+    set fillchars+=vert:\ 
     set nomousehide
     if has("gui_macvim")
         set guifont=Ubuntu\ Mono\ derivative\ Powerline:h16
