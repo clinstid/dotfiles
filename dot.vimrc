@@ -7,9 +7,8 @@ set ruler
 set backspace=2
 set showmode
 set noerrorbells
-set et
-set sw=4
-set tabstop=8
+set expandtab
+set tabstop=4
 set shiftwidth=4
 set smarttab
 set title
@@ -43,9 +42,10 @@ filetype plugin on
 filetype indent on
 
 set cino=(0
-set ofu=syntaxcomplete#Complete
+"set ofu=syntaxcomplete#Complete
 
-set completeopt=longest,menuone
+set autochdir
+set completeopt=longest,menuone,preview
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 inoremap <expr> <C-n> pumvisible() ? '<C-n>' :
             \ '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
@@ -62,7 +62,6 @@ au BufNewFile,BufRead *.sm set ft=cpp
 au BufNewFile,BufRead *.py set ft=python
 
 
-set autochdir
 highlight StatusLine ctermfg=15 ctermbg=4
 highlight StatusLineNC ctermfg=4 ctermbg=7
 set statusline=%t\ <%F\ %m\ %=%l/%L,%c\ %P
@@ -227,3 +226,5 @@ let g:html_indent_inctags = "html,head,body,tbody,ul,li,p"
 map <leader>n :NERDTreeToggle<CR>
 map <leader>v :NERDTreeFocus<CR>
 map <leader>f :call JsBeautify()<cr>
+
+let g:jedi#use_tabs_not_buffers = 0
