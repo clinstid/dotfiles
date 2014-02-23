@@ -183,10 +183,7 @@ if has("gui_running")
     "set guifont=Fixed\ 11
 else
     let g:airline_theme = 'wombat'
-    if &term == "screen"
-        set t_Co=16
-        colorscheme default
-    elseif &term == "linux"
+    if &term == "linux"
         set t_Co=16
         colorscheme default
     else
