@@ -168,10 +168,6 @@ if has("gui_running")
         set guifont=Ubuntu\ Mono\ derivative\ Powerline:h16
     else
         set guifont=Ubuntu\ Mono\ 12
-        if !exists('g:airline_symbols')
-            let g:airline_symbols = {}
-        endif
-        let g:airline_symbols.space = "\ua0"
     endif
 
     "Light background
@@ -214,6 +210,11 @@ nmap <leader>r :Errors<cr>
 
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#whitespace#enabled = 0
+
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+let g:airline_symbols.space = "\ua0"
 
 fun! <SID>StripTrailingWhitespaces()
     let l = line(".")
