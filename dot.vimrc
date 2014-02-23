@@ -7,9 +7,8 @@ set ruler
 set backspace=2
 set showmode
 set noerrorbells
-set et
-set sw=4
-set tabstop=8
+set expandtab
+set tabstop=4
 set shiftwidth=4
 set smarttab
 set title
@@ -43,15 +42,17 @@ filetype plugin on
 filetype indent on
 
 set cino=(0
-set ofu=syntaxcomplete#Complete
+"set ofu=syntaxcomplete#Complete
 
+set autochdir
+"set completeopt=longest,menuone,preview
 set completeopt=longest,menuone
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 inoremap <expr> <C-n> pumvisible() ? '<C-n>' :
-  \ '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
+            \ '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
 
 inoremap <expr> <M-,> pumvisible() ? '<C-n>' :
-  \ '<C-x><C-o><C-n><C-p><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
+            \ '<C-x><C-o><C-n><C-p><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
 
 au! FileType python setl nosmartindent
 
@@ -62,7 +63,6 @@ au BufNewFile,BufRead *.sm set ft=cpp
 au BufNewFile,BufRead *.py set ft=python
 
 
-set autochdir
 highlight StatusLine ctermfg=15 ctermbg=4
 highlight StatusLineNC ctermfg=4 ctermbg=7
 set statusline=%t\ <%F\ %m\ %=%l/%L,%c\ %P
@@ -78,14 +78,14 @@ set statusline=%t\ <%F\ %m\ %=%l/%L,%c\ %P
 "set statusline+=\ %P    "percent through file
 
 if has("autocmd")
-  filetype plugin indent on
-  " autocmd FileType text setlocal textwidth=78
+    filetype plugin indent on
+    " autocmd FileType text setlocal textwidth=78
 
-  " always jump to last edit position when opening a file
-  autocmd BufReadPost *
-    \ if line("'\"") > 0 && line("'\"") <= line("$") |
-    \   exe "normal g`\"" |
-    \ endif
+    " always jump to last edit position when opening a file
+    autocmd BufReadPost *
+                \ if line("'\"") > 0 && line("'\"") <= line("$") |
+                \   exe "normal g`\"" |
+                \ endif
 endif
 
 helptags $HOME/.vim/doc
@@ -162,7 +162,7 @@ if has("gui_running")
     set go=aip
     imap <C-C> "+y
     set mousemodel=popup_setpos
-    set fillchars+=vert:\
+    set fillchars+=vert:\ 
     set nomousehide
     if has("gui_macvim")
         set guifont=Ubuntu\ Mono\ derivative\ Powerline:h16
@@ -201,13 +201,17 @@ let g:session_autoload = 'no'
 let g:session_autosave = 'no'
 
 " Syntastic
-"nmap <leader>s :SyntasticCheck<cr>
-"nmap <leader>t :SyntasticTooggleMode<cr>
-"nmap <leader>r :Errors<cr>
+nmap <leader>s :SyntasticCheck<cr>
+nmap <leader>t :SyntasticTooggleMode<cr>
+nmap <leader>r :Errors<cr>
 
 let g:airline_powerline_fonts = 1
-let g:airline_theme = 'wombat'
 let g:airline#extensions#whitespace#enabled = 0
+
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+let g:airline_symbols.space = "\ua0"
 
 fun! <SID>StripTrailingWhitespaces()
     let l = line(".")
@@ -216,4 +220,10 @@ fun! <SID>StripTrailingWhitespaces()
     call cursor(l, c)
 endfun
 
-map <C-d> :NERDTreeToggle<cr>
+let g:html_indent_inctags = "html,head,body,tbody,ul,li,p"
+
+map <leader>e :NERDTreeToggle<CR>
+map <leader>v :NERDTreeFocus<CR>
+map <leader>f :call JsBeautify()<cr>
+
+let g:jedi#use_tabs_not_buffers = 0
