@@ -45,7 +45,8 @@ set cino=(0
 "set ofu=syntaxcomplete#Complete
 
 set autochdir
-set completeopt=longest,menuone,preview
+"set completeopt=longest,menuone,preview
+set completeopt=longest,menuone
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 inoremap <expr> <C-n> pumvisible() ? '<C-n>' :
             \ '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
@@ -223,7 +224,7 @@ endfun
 
 let g:html_indent_inctags = "html,head,body,tbody,ul,li,p"
 
-map <leader>n :NERDTreeToggle<CR>
+map <leader>e :NERDTreeToggle<CR>
 map <leader>v :NERDTreeFocus<CR>
 map <leader>f :call JsBeautify()<cr>
 

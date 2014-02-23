@@ -55,3 +55,6 @@
 [submodule "dot.vim/bundle/vim-jsbeautify"]
 	path = dot.vim/bundle/vim-jsbeautify
 	url = https://github.com/maksimr/vim-jsbeautify.git
+[submodule "dot.vim/bundle/rope-vim"]
+	path = dot.vim/bundle/rope-vim
+	url = https://github.com/sontek/rope-vim.git
