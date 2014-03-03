@@ -61,6 +61,7 @@ au BufNewFile,BufRead *.*_xml set ft=xml
 au BufNewFile,BufRead *.*_xsl set ft=xslt
 au BufNewFile,BufRead *.sm set ft=cpp
 au BufNewFile,BufRead *.py set ft=python
+"au BufNewFile,BufRead *.mc set ft=perl
 
 
 highlight StatusLine ctermfg=15 ctermbg=4
