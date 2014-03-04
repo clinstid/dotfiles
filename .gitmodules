@@ -61,3 +61,6 @@
 [submodule "dot.vim/bundle/vim-perl"]
 	path = dot.vim/bundle/vim-perl
 	url = https://github.com/vim-perl/vim-perl.git
+[submodule "dot.vim/bundle/vim-sleuth"]
+	path = dot.vim/bundle/vim-sleuth
+	url = https://github.com/tpope/vim-sleuth.git
