@@ -9,7 +9,7 @@ set showmode
 set noerrorbells
 "set expandtab
 "set tabstop=4
-"set shiftwidth=4
+set shiftwidth=4
 set smarttab
 set title
 set gcr=a:blinkon0
@@ -40,6 +40,8 @@ set modelines=0
 "set undofile
 filetype plugin on
 filetype indent on
+
+set list listchars=tab:»-,trail:·,extends:»,precedes:«
 
 set cino=(0
 "set ofu=syntaxcomplete#Complete
