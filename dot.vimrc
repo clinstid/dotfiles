@@ -7,8 +7,8 @@ set ruler
 set backspace=2
 set showmode
 set noerrorbells
-set expandtab
-set tabstop=4
+"set expandtab
+"set tabstop=4
 set shiftwidth=4
 set smarttab
 set title
@@ -41,6 +41,8 @@ set modelines=0
 filetype plugin on
 filetype indent on
 
+set list listchars=tab:»-,trail:·,extends:»,precedes:«
+
 set cino=(0
 "set ofu=syntaxcomplete#Complete
 
@@ -61,6 +63,7 @@ au BufNewFile,BufRead *.*_xml set ft=xml
 au BufNewFile,BufRead *.*_xsl set ft=xslt
 au BufNewFile,BufRead *.sm set ft=cpp
 au BufNewFile,BufRead *.py set ft=python
+au BufNewFile,BufRead *.mc set ft=mason
 
 
 highlight StatusLine ctermfg=15 ctermbg=4
