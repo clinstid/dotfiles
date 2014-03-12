@@ -34,7 +34,7 @@ set wrap
 set linebreak
 set history=1000
 " set backup
-set nohlsearch
+set hlsearch
 set spellcapcheck=""
 set modelines=0
 "set undofile
