@@ -52,7 +52,7 @@ hi Typedef        ctermfg=179
 hi Special        ctermfg=179
 hi SpecialChar    ctermfg=103
 hi SpecialComment ctermfg=68
-hi SpecialKey     ctermfg=237
+hi SpecialKey     ctermfg=233
 hi Ignore         ctermfg=102
 hi Error          ctermfg=167              ctermbg=NONE
 hi Todo           ctermfg=233                 ctermbg=228
