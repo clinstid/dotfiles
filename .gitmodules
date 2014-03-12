@@ -64,3 +64,6 @@
 [submodule "dot.vim/bundle/vim-sleuth"]
 	path = dot.vim/bundle/vim-sleuth
 	url = https://github.com/tpope/vim-sleuth.git
+[submodule "dot.vim/bundle/command-t"]
+	path = dot.vim/bundle/command-t
+	url = git://git.wincent.com/command-t.git
