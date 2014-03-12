@@ -199,9 +199,9 @@ else
     endif
 endif
 
-let g:ctrp_cmd = 'CtrlPMixed'
-let g:ctrlp_max_files = 100000
-let g:ctrlp_clear_cache_on_exit = 0
+let g:ctrlp_max_files = 0
+let g:ctrlp_working_path_mode = 'r'
+let g:ctrlp_root_markers = '.ctrlp'
 
 let g:session_autoload = 'no'
 let g:session_autosave = 'no'
