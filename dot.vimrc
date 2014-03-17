@@ -178,7 +178,8 @@ if has("gui_running")
     "----------------
     set background=light
     colorscheme vylight
-    let g:airline_theme = 'wombat'
+    "let g:airline_theme = 'wombat'
+    let g:airline_theme = 'sol'
 
     "Dark background
     "---------------
