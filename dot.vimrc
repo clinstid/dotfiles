@@ -7,8 +7,8 @@ set ruler
 set backspace=2
 set showmode
 set noerrorbells
-"set expandtab
-"set tabstop=4
+set expandtab
+set tabstop=4
 set shiftwidth=4
 set smarttab
 set title
@@ -169,6 +169,7 @@ if has("gui_running")
     set nomousehide
     if has("gui_macvim")
         set guifont=Ubuntu\ Mono\ derivative\ Powerline:h16
+        set vb
     else
         set guifont=Ubuntu\ Mono\ 12
     endif
@@ -198,10 +199,6 @@ else
         colorscheme 256_vilight
     endif
 endif
-
-let g:ctrlp_max_files = 0
-let g:ctrlp_working_path_mode = 'r'
-let g:ctrlp_root_markers = '.ctrlp'
 
 let g:session_autoload = 'no'
 let g:session_autosave = 'no'
