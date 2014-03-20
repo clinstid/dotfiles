@@ -233,3 +233,6 @@ map <leader>v :NERDTreeFocus<CR>
 map <leader>f :call JsBeautify()<cr>
 
 let g:jedi#use_tabs_not_buffers = 0
+
+map <leader>sp :set paste<CR>
+map <leader>nsp :set nopaste<CR>
