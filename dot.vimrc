@@ -205,9 +205,9 @@ let g:session_autoload = 'no'
 let g:session_autosave = 'no'
 
 " Syntastic
-nmap <leader>s :SyntasticCheck<cr>
-nmap <leader>t :SyntasticTooggleMode<cr>
-nmap <leader>r :Errors<cr>
+"nmap <leader>s :SyntasticCheck<cr>
+"nmap <leader>t :SyntasticTooggleMode<cr>
+"nmap <leader>r :Errors<cr>
 
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#whitespace#enabled = 0
