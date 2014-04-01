@@ -67,3 +67,6 @@
 [submodule "dot.vim/bundle/command-t"]
 	path = dot.vim/bundle/command-t
 	url = git://git.wincent.com/command-t.git
+[submodule "dot.vim/bundle/nginx-vim-syntax"]
+	path = dot.vim/bundle/nginx-vim-syntax
+	url = https://github.com/evanmiller/nginx-vim-syntax.git
