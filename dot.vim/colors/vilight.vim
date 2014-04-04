@@ -12,7 +12,7 @@ hi Normal         guifg=#b6b6b6           guibg=#212121
 hi Cursor         guifg=#212121           guibg=#9ca9b7
 hi CursorLine	  guifg=#ffffff		      guibg=#6c8095
 hi Directory      guifg=#6c8095            guibg=NONE
-hi VertSplit      guifg=#b6b6b6           guibg=#a6a6a6
+hi VertSplit      guifg=gray10           guibg=gray10
 hi Folded         guifg=#9ca9b7           guibg=NONE        gui=italic
 hi FoldColumn	  guifg=#9ca9b7           guibg=NONE        gui=italic
 hi vimFold	      guifg=#dee4ea		      guibg=NONE        gui=italic

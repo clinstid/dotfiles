@@ -176,10 +176,12 @@ if has("gui_running")
 
     "Light background
     "----------------
-    set background=light
-    colorscheme vylight
-    "let g:airline_theme = 'wombat'
-    let g:airline_theme = 'sol'
+    "set background=light
+    "colorscheme vylight
+    set background=dark
+    colorscheme vilight
+    let g:airline_theme = 'wombat'
+    "let g:airline_theme = 'sol'
 
     "Dark background
     "---------------
@@ -231,3 +233,4 @@ let g:jedi#use_tabs_not_buffers = 0
 
 map <leader>sp :set paste<CR>
 map <leader>nsp :set nopaste<CR>
+
