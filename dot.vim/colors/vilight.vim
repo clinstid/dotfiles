@@ -8,35 +8,35 @@ endif
 
 let g:colors_name="vilight"
 
-hi Normal         guifg=#b6b6b6           guibg=#212121
-hi Cursor         guifg=#212121           guibg=#9ca9b7
-hi CursorLine	  guifg=#ffffff		      guibg=#6c8095
-hi Directory      guifg=#6c8095            guibg=NONE
-hi VertSplit      guifg=gray10           guibg=gray10
+hi Normal         guifg=#b6b6b6           guibg=gray10
+hi Cursor         guifg=white             guibg=SteelBlue3
+hi CursorLine     guifg=NONE              guibg=gray11
+hi Directory      guifg=#6c8095           guibg=NONE
+hi VertSplit      guifg=gray10            guibg=gray10
 hi Folded         guifg=#9ca9b7           guibg=NONE        gui=italic
-hi FoldColumn	  guifg=#9ca9b7           guibg=NONE        gui=italic
-hi vimFold	      guifg=#dee4ea		      guibg=NONE        gui=italic
-hi IncSearch      guifg=#212121           guibg=#b6b6b6
+hi FoldColumn     guifg=#9ca9b7           guibg=NONE        gui=italic
+hi vimFold        guifg=#dee4ea           guibg=NONE        gui=italic
+hi IncSearch      guifg=NONE              guibg=gray15
 hi LineNr         guifg=#424242           guibg=NONE
 hi ModeMsg        guifg=#8f9d6a           guibg=NONE
 hi MoreMsg        guifg=#8f9d6a           guibg=NONE
 hi NonText        guifg=#424242           guibg=NONE
-hi Search         guifg=#eedd82           guibg=NONE        gui=underline
-hi StatusLine     guifg=#9ca9b7           guibg=#424242     
-hi StatusLineNC   guifg=#9ca9b7           guibg=#212121     
-hi Visual         guifg=#212121           guibg=#9ca9b7     gui=italic
+hi Search         guifg=NONE              guibg=gray15 gui=NONE
+hi StatusLine     guifg=#9ca9b7           guibg=#424242
+hi StatusLineNC   guifg=#9ca9b7           guibg=gray10
+hi Visual         guifg=NONE              guibg=gray17      gui=NONE
 hi WildMenu       guifg=#6c8095           guibg=#ffffff
-hi MatchParen	  guifg=#ffffff		      guibg=#6c8095     gui=NONE
-hi ErrorMsg	      guifg=#cf6a4c           guibg=NONE        gui=NONE
-hi WarningMsg	  guifg=#eedd82		      guibg=NONE        gui=NONE
-hi Title	      guifg=#cf6a4c		      guibg=NONE        gui=NONE
+hi MatchParen     guifg=#ffffff           guibg=#6c8095     gui=NONE
+hi ErrorMsg       guifg=#cf6a4c           guibg=NONE        gui=NONE
+hi WarningMsg     guifg=#eedd82           guibg=NONE        gui=NONE
+hi Title          guifg=#cf6a4c           guibg=NONE        gui=NONE
 hi SpecialKey     guifg=#424242           guibg=NONE
 
 "Syntax hilight groups
 
 hi Comment        guifg=#646959           gui=italic
 hi Constant       guifg=#7587a6           gui=NONE
-hi Exception      guifg=#cf6a4c           gui=NONE          
+hi Exception      guifg=#cf6a4c           gui=NONE
 hi String         guifg=#8f9d6a           gui=NONE
 hi Variable       guifg=#7587a6           gui=NONE
 hi Number         guifg=#cf6a4c           gui=NONE
@@ -47,15 +47,15 @@ hi Identifier     guifg=#7587a6           gui=NONE
 hi Statement      guifg=#cda869           gui=NONE
 hi Keyword        guifg=#cda869           gui=NONE
 hi PreProc        guifg=#7587a6           gui=NONE
-hi Type           guifg=#9b859d		      gui=NONE		
+hi Type           guifg=#9b859d           gui=NONE
 hi Typedef        guifg=#cda869           gui=NONE
 hi Special        guifg=NONE              guibg=NONE         gui=bold
 hi SpecialChar    guifg=#7587a6           gui=NONE
 hi SpecialComment guifg=#4f94cd           gui=NONE
 hi Ignore         guifg=#848484           gui=NONE
 hi Error          guifg=#cf6a4c           guibg=NONE         gui=underline
-hi Todo           guifg=#f9ee98		      guibg=NONE         gui=bold
-hi Pmenu          guifg=#212121           guibg=#9ca9b7
+hi Todo           guifg=#f9ee98           guibg=NONE         gui=bold
+hi Pmenu          guifg=gray10            guibg=#9ca9b7
 hi PmenuSel       guifg=#ffffff           guibg=#6c8095
 hi PmenuSbar      guibg=#b6b6b6
 hi PmenuThumb     guifg=#424242

@@ -1,3 +1,4 @@
+
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 call pathogen#infect()
@@ -234,3 +235,6 @@ let g:jedi#use_tabs_not_buffers = 0
 map <leader>sp :set paste<CR>
 map <leader>nsp :set nopaste<CR>
 
+let g:syntastic_python_flake8_args = '--ignore=E501'
+
+map <leader>tws :%s/\s+$//<CR>

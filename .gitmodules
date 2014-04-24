@@ -67,3 +67,12 @@
 [submodule "dot.vim/bundle/nginx-vim-syntax"]
 	path = dot.vim/bundle/nginx-vim-syntax
 	url = https://github.com/evanmiller/nginx-vim-syntax.git
+[submodule "dot.vim/bundle/vim-flake8"]
+	path = dot.vim/bundle/vim-flake8
+	url = https://github.com/nvie/vim-flake8.git
+[submodule "dot.vim/bundle/vimoutliner"]
+	path = dot.vim/bundle/vimoutliner
+	url = https://github.com/vimoutliner/vimoutliner.git
+[submodule "dot.vim/bundle/vim-vinegar"]
+	path = dot.vim/bundle/vim-vinegar
+	url = https://github.com/tpope/vim-vinegar.git
