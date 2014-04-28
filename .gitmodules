@@ -4,9 +4,6 @@
 [submodule "dot.vim/bundle/vim-airline"]
 	path = dot.vim/bundle/vim-airline
 	url = https://github.com/bling/vim-airline.git
-[submodule "dot.vim/bundle/supertab"]
-	path = dot.vim/bundle/supertab
-	url = https://github.com/ervandew/supertab.git
 [submodule "dot.vim/bundle/ctrlp.vim"]
 	path = dot.vim/bundle/ctrlp.vim
 	url = https://github.com/kien/ctrlp.vim.git
@@ -76,3 +73,6 @@
 [submodule "dot.vim/bundle/vim-vinegar"]
 	path = dot.vim/bundle/vim-vinegar
 	url = https://github.com/tpope/vim-vinegar.git
+[submodule "dot.vim/bundle/YouCompleteMe"]
+	path = dot.vim/bundle/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe.git

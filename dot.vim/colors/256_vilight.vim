@@ -13,7 +13,7 @@ hi Normal         ctermfg=NONE   ctermbg=NONE
 hi Cursor         ctermfg=233  ctermbg=15
 hi CursorLine     ctermfg=NONE  ctermbg=238
 hi Directory      ctermfg=107  ctermbg=233
-hi VertSplit      ctermfg=0  ctermbg=0
+hi VertSplit      ctermfg=0 ctermbg=0
 hi Folded         ctermfg=102  ctermbg=235
 hi FoldColumn     ctermfg=167  ctermbg=233
 hi vimFold        ctermfg=15   ctermbg=235

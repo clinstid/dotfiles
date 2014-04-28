@@ -1,7 +1,12 @@
-
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 call pathogen#infect()
+
+let g:airline_symbols = { "linenr": "\ue0a1", "paste": "PASTE", "readonly": "\ue0a2", "modified": "+", "space": "\u00a0", "whitespace": "\u2739", "branch": "\ue0a0" }
+let g:airline_left_sep = "\ue0b0"
+let g:airline_left_alt_sep = "\ue0b1"
+let g:airline_right_sep = "\ue0b2"
+let g:airline_right_alt_sep = "\ue0b3"
 
 set nocompatible
 set ruler
@@ -164,7 +169,8 @@ if has("gui_running")
     set columns=80
     set lines=40
     set go=aip
-    imap <C-C> "+y
+    vmap <C-C> "+y
+    imap <C-V> <ESC>"+gPi
     set mousemodel=popup_setpos
     set fillchars+=vert:\ 
     set nomousehide
@@ -208,14 +214,6 @@ let g:session_autosave = 'no'
 "nmap <leader>s :SyntasticCheck<cr>
 "nmap <leader>t :SyntasticTooggleMode<cr>
 "nmap <leader>r :Errors<cr>
-
-let g:airline_powerline_fonts = 1
-let g:airline#extensions#whitespace#enabled = 0
-
-if !exists('g:airline_symbols')
-    let g:airline_symbols = {}
-endif
-let g:airline_symbols.space = "\ua0"
 
 fun! <SID>StripTrailingWhitespaces()
     let l = line(".")
