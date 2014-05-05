@@ -12,7 +12,7 @@ hi Normal         guifg=#b6b6b6           guibg=gray10
 hi Cursor         guifg=white             guibg=SteelBlue3
 hi CursorLine     guifg=NONE              guibg=gray11
 hi Directory      guifg=#6c8095           guibg=NONE
-hi VertSplit      guifg=gray10            guibg=gray10
+hi VertSplit      guifg=gray10            guibg=gray11      gui=NONE
 hi Folded         guifg=#9ca9b7           guibg=NONE        gui=italic
 hi FoldColumn     guifg=#9ca9b7           guibg=NONE        gui=italic
 hi vimFold        guifg=#dee4ea           guibg=NONE        gui=italic
@@ -23,7 +23,7 @@ hi MoreMsg        guifg=#8f9d6a           guibg=NONE
 hi NonText        guifg=#424242           guibg=NONE
 hi Search         guifg=NONE              guibg=gray15 gui=NONE
 hi StatusLine     guifg=#9ca9b7           guibg=#424242
-hi StatusLineNC   guifg=#9ca9b7           guibg=gray10
+hi StatusLineNC   guifg=#9ca9b7           guibg=gray11
 hi Visual         guifg=NONE              guibg=gray17      gui=NONE
 hi WildMenu       guifg=#6c8095           guibg=#ffffff
 hi MatchParen     guifg=#ffffff           guibg=#6c8095     gui=NONE
@@ -31,6 +31,7 @@ hi ErrorMsg       guifg=#cf6a4c           guibg=NONE        gui=NONE
 hi WarningMsg     guifg=#eedd82           guibg=NONE        gui=NONE
 hi Title          guifg=#cf6a4c           guibg=NONE        gui=NONE
 hi SpecialKey     guifg=#424242           guibg=NONE
+hi SpellBad       guifg=NONE              guibg=gray14      gui=NONE
 
 "Syntax hilight groups
 

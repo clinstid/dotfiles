@@ -2,11 +2,7 @@ call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 call pathogen#infect()
 
-let g:airline_symbols = { "linenr": "\ue0a1", "paste": "PASTE", "readonly": "\ue0a2", "modified": "+", "space": "\u00a0", "whitespace": "\u2739", "branch": "\ue0a0" }
-let g:airline_left_sep = "\ue0b0"
-let g:airline_left_alt_sep = "\ue0b1"
-let g:airline_right_sep = "\ue0b2"
-let g:airline_right_alt_sep = "\ue0b3"
+let g:airline_powerline_fonts=1
 
 set nocompatible
 set ruler
@@ -174,27 +170,16 @@ if has("gui_running")
     set mousemodel=popup_setpos
     set fillchars+=vert:\ 
     set nomousehide
+    set vb
     if has("gui_macvim")
         set guifont=Ubuntu\ Mono\ derivative\ Powerline:h16
-        set vb
     else
-        set guifont=Ubuntu\ Mono\ 12
+        set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 12
     endif
 
-    "Light background
-    "----------------
-    "set background=light
-    "colorscheme vylight
+    color vilight
     set background=dark
-    colorscheme vilight
     let g:airline_theme = 'wombat'
-    "let g:airline_theme = 'sol'
-
-    "Dark background
-    "---------------
-    "set background=dark
-    "colorscheme molokai
-    "set guifont=Fixed\ 11
 else
     let g:airline_theme = 'wombat'
     if &term == "linux"
@@ -236,3 +221,7 @@ map <leader>nsp :set nopaste<CR>
 let g:syntastic_python_flake8_args = '--ignore=E501'
 
 map <leader>tws :%s/\s+$//<CR>
+
+nmap <C-S> :w<CR>
+
+autocmd BufNewFile,BufRead {Gemfile,Vagrantfile,Berksfile} set filetype=ruby
