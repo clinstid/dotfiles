@@ -1,8 +1,14 @@
+"let g:jedi#use_tabs_not_buffers = 0
+"let g:jedi#popup_select_first = 0
+"let g:jedi#auto_vim_configuration = 0
+let g:airline_powerline_fonts=1
+let g:miniBufExplMapWindowNavVim = 1
+let g:ycm_autoclose_preview_window_after_completion = 1
+nnoremap <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
+
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 call pathogen#infect()
-
-let g:airline_powerline_fonts=1
 
 set nocompatible
 set ruler
@@ -49,8 +55,7 @@ set cino=(0
 "set ofu=syntaxcomplete#Complete
 
 set autochdir
-"set completeopt=longest,menuone,preview
-set completeopt=longest,menuone
+set completeopt=menuone
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 inoremap <expr> <C-n> pumvisible() ? '<C-n>' :
             \ '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
@@ -118,7 +123,6 @@ let MRU_Max_Entries = 1000
 " nnoremap <CR> :noh<CR><CR>
 
 " minibufexplorer
-let g:miniBufExplMapWindowNavVim = 1
 
 " Search for selected text, forwards or backwards.
 " vnoremap <silent> * :<C-U>
@@ -166,7 +170,7 @@ if has("gui_running")
     set lines=40
     set go=aip
     vmap <C-C> "+y
-    imap <C-V> <ESC>"+gPi
+    imap <C-V> <ESC>"+gpi
     set mousemodel=popup_setpos
     set fillchars+=vert:\ 
     set nomousehide
@@ -213,8 +217,6 @@ map <leader>e :NERDTreeToggle<CR>
 map <leader>v :NERDTreeFocus<CR>
 map <leader>f :call JsBeautify()<cr>
 
-let g:jedi#use_tabs_not_buffers = 0
-
 map <leader>sp :set paste<CR>
 map <leader>nsp :set nopaste<CR>
 
@@ -225,3 +227,5 @@ map <leader>tws :%s/\s+$//<CR>
 nmap <C-S> :w<CR>
 
 autocmd BufNewFile,BufRead {Gemfile,Vagrantfile,Berksfile} set filetype=ruby
+
+

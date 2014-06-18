@@ -17,12 +17,12 @@ hi VertSplit      ctermfg=0 ctermbg=0
 hi Folded         ctermfg=102  ctermbg=235
 hi FoldColumn     ctermfg=167  ctermbg=233
 hi vimFold        ctermfg=15   ctermbg=235
-hi IncSearch      ctermfg=68   ctermbg=15
+hi IncSearch      ctermfg=NONE   ctermbg=235
 hi LineNr         ctermfg=238  ctermbg=NONE
 hi ModeMsg        ctermfg=228  ctermbg=233
 hi MoreMsg        ctermfg=228  ctermbg=233
 hi NonText        ctermfg=59   ctermbg=NONE
-hi Search         ctermfg=15 ctermbg=32
+hi Search         ctermfg=NONE ctermbg=233
 hi StatusLine     ctermfg=16   ctermbg=111
 hi StatusLineNC   ctermfg=16   ctermbg=255
 hi ColorColumn    ctermfg=NONE ctermbg=234
