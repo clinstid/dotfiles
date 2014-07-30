@@ -32,6 +32,7 @@ hi WarningMsg     guifg=#eedd82           guibg=NONE        gui=NONE
 hi Title          guifg=#cf6a4c           guibg=NONE        gui=NONE
 hi SpecialKey     guifg=#424242           guibg=NONE
 hi SpellBad       guifg=NONE              guibg=gray14      gui=NONE
+hi ColorColumn    guibg=gray8
 
 "Syntax hilight groups
 

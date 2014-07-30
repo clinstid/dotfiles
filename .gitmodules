@@ -79,3 +79,21 @@
 [submodule "dot.vim/bundle/supertab"]
 	path = dot.vim/bundle/supertab
 	url = https://github.com/ervandew/supertab.git
+[submodule "dot.vim/bundle/sourcebeautify.vim"]
+	path = dot.vim/bundle/sourcebeautify.vim
+	url = https://github.com/michalliu/sourcebeautify.vim.git
+[submodule "dot.vim/bundle/jsruntime.vim"]
+	path = dot.vim/bundle/jsruntime.vim
+	url = https://github.com/michalliu/jsruntime.vim.git
+[submodule "dot.vim/bundle/jsoncodecs.vim"]
+	path = dot.vim/bundle/jsoncodecs.vim
+	url = https://github.com/michalliu/jsoncodecs.vim.git
+[submodule "dot.vim/bundle/mru"]
+	path = dot.vim/bundle/mru
+	url = https://github.com/yegappan/mru.git
+[submodule "dot.vim/bundle/vim-python-pep8-indent"]
+	path = dot.vim/bundle/vim-python-pep8-indent
+	url = https://github.com/hynek/vim-python-pep8-indent.git
+[submodule "dot.vim/bundle/python-mode"]
+	path = dot.vim/bundle/python-mode
+	url = https://github.com/klen/python-mode.git

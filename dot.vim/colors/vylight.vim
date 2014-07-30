@@ -18,10 +18,10 @@ endif
 let g:colors_name="vylight"
 
 
-hi Normal        guifg=#1a1a1a  guibg=white
-hi Title         guifg=black    guibg=white
+hi Normal        guifg=#1a1a1a  guibg=gray98
+hi Title         guifg=black    guibg=gray98
 hi Cursor        guifg=white    guibg=SteelBlue3
-hi LineNr        guifg=gray81  guibg=white
+hi LineNr        guifg=gray81  guibg=gray98
 hi Visual        guibg=#bbddff
 hi NonText       guifg=#cccccc  guibg=#fafafa
 hi StatusLine    guifg=gray30  guibg=gray92  gui=none
@@ -29,8 +29,9 @@ hi StatusLineNC  guifg=gray50  guibg=gray94  gui=none
 hi VertSplit     guifg=gray97  guibg=gray97  gui=none
 hi ModeMsg       guifg=#007050  guibg=#eeeeee  gui=none
 hi ErrorMsg      guifg=#f03050  guibg=#eeeeee  gui=none
-hi Error         guifg=#bb3355  guibg=white    gui=none
+hi Error         guifg=#bb3355  guibg=gray98    gui=none
 hi Folded        guifg=#999999  guibg=#fafafa
+hi ColorColumn   guibg=gray97
 
 
 " Vim 7.x specific
