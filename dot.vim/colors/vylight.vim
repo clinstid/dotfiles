@@ -42,8 +42,8 @@ if version >= 700
   hi PmenuSel    guifg=white    guibg=#3585ef  gui=bold
   hi PmenuSbar   guifg=#d0d5dd  guibg=#e0e5ee  gui=bold
   hi PmenuThumb  guifg=#e0e5ee  guibg=#c0c5dd  gui=bold
-  hi Search      guibg=#fcfcaa  gui=none
-  hi IncSearch   guibg=#ffff33  gui=bold
+  hi Search      guibg=gray90   gui=none
+  hi IncSearch   guibg=gray91   gui=bold
 endif
 
 

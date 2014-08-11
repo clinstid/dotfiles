@@ -180,9 +180,15 @@ if has("gui_running")
         set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 12
     endif
 
-    colorscheme vylight
-    set background=light
-    let g:airline_theme = 'sol'
+    " Light background
+    "colorscheme vylight
+    "set background=light
+    "let g:airline_theme = 'sol'
+
+    " Dark background
+    colorscheme vilight
+    set background=dark
+    let g:airline_theme = 'wombat'
 else
     let g:airline_theme = 'wombat'
     if &term == "linux"

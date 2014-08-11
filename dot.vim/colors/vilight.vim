@@ -30,7 +30,7 @@ hi MatchParen     guifg=#ffffff           guibg=#6c8095     gui=NONE
 hi ErrorMsg       guifg=#cf6a4c           guibg=NONE        gui=NONE
 hi WarningMsg     guifg=#eedd82           guibg=NONE        gui=NONE
 hi Title          guifg=#cf6a4c           guibg=NONE        gui=NONE
-hi SpecialKey     guifg=#424242           guibg=NONE
+hi SpecialKey     guifg=gray10             guibg=NONE
 hi SpellBad       guifg=NONE              guibg=gray14      gui=NONE
 hi ColorColumn    guibg=gray8
 
@@ -52,8 +52,8 @@ hi PreProc        guifg=#7587a6           gui=NONE
 hi Type           guifg=#9b859d           gui=NONE
 hi Typedef        guifg=#cda869           gui=NONE
 hi Special        guifg=NONE              guibg=NONE         gui=bold
-hi SpecialChar    guifg=#7587a6           gui=NONE
-hi SpecialComment guifg=#4f94cd           gui=NONE
+hi SpecialChar    guifg=gray6             gui=NONE
+hi SpecialComment guifg=gray6             gui=NONE
 hi Ignore         guifg=#848484           gui=NONE
 hi Error          guifg=#cf6a4c           guibg=NONE         gui=underline
 hi Todo           guifg=#f9ee98           guibg=NONE         gui=bold

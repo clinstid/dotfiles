@@ -9,7 +9,7 @@ endif
 
 let g:colors_name="256_vilight"
 
-hi Normal         ctermfg=NONE   ctermbg=NONE
+hi Normal         ctermfg=NONE   ctermbg=232
 hi Cursor         ctermfg=233  ctermbg=15
 hi CursorLine     ctermfg=NONE  ctermbg=238
 hi Directory      ctermfg=107  ctermbg=233
@@ -25,7 +25,7 @@ hi NonText        ctermfg=59   ctermbg=NONE
 hi Search         ctermfg=NONE ctermbg=233
 hi StatusLine     ctermfg=16   ctermbg=111
 hi StatusLineNC   ctermfg=16   ctermbg=255
-hi ColorColumn    ctermfg=NONE ctermbg=234
+hi ColorColumn    ctermfg=NONE ctermbg=233
 
 hi Visual         ctermfg=NONE ctermbg=237
 hi WildMenu       ctermfg=99   ctermbg=234
